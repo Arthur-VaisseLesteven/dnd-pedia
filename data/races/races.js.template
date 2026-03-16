@@ -1,0 +1,26 @@
+let nom_de_race = {
+	'source': {
+		'en': ``,
+        'fr': ``
+	},
+	'name': {
+		'en': ``,
+        'fr': ``
+	},
+	'lore': {
+		'en': [
+			{ 'title': ``, 'content': `` },
+		],
+		'fr': [
+			{ 'title': ``, 'content': `` },
+		]
+	},
+	'racial-features': {
+		'en' : [
+			{ 'content': ``},
+		],
+		'fr': [
+            { 'content': `` },
+        ]
+	}
+}
