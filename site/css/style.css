@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'dungeonregular';
+    src: url('custom-fonts/dragonlord-webfont.woff2') format('woff2'),
+         url('custom-fonts/dragonlord-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('custom-fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('custom-fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('custom-fonts/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('custom-fonts/librebaskerville-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('custom-fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('custom-fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* ── Reset & Base ───────────────────────────────────────────── */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'LibreBaskerville', 'Georgia', serif;
+    background-color: #1a1a2e;
+    color: #e0d6c8;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'dungeonregular', 'Georgia', serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #e0c097;
+}
+
+a {
+    color: #c4956a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #e0c097;
+}
+
+p, section {
+    text-align: justify;
+}
+
+/* ── Banner ─────────────────────────────────────────────────── */
+
+.banner {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    background: linear-gradient(180deg, #0f0f23 0%, #1a1a2e 100%);
+    border-bottom: 1px solid rgba(139, 94, 60, 0.3);
+}
+
+.banner a {
+    display: inline-block;
+}
+
+.banner img {
+    max-width: min(70%, 700px);
+    height: auto;
+}
+
+/* ── Main content ───────────────────────────────────────────── */
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* ── Category Menu ──────────────────────────────────────────── */
+
+.category-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.category-card {
+    position: relative;
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #16213e;
+    border: 1px solid rgba(139, 94, 60, 0.25);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(196, 149, 106, 0.2),
+                0 2px 8px rgba(0, 0, 0, 0.4);
+    border-color: rgba(196, 149, 106, 0.5);
+}
+
+.category-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.85);
+    transition: filter 0.25s ease;
+}
+
+.category-card:hover .category-card__image {
+    filter: brightness(1);
+}
+
+.category-card__body {
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-card__title {
+    font-family: 'dungeonregular', 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #e0c097;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.category-card__subtitle {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+}
+
+/* ── Section title (used on index pages) ────────────────────── */
+
+.section-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+
+/* ── Race list (races/index.html) ───────────────────────────── */
+
+.race-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.race-list__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #16213e;
+    border: 1px solid rgba(139, 94, 60, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.race-list__item:hover {
+    transform: translateX(6px);
+    border-color: rgba(196, 149, 106, 0.5);
+}
+
+.race-list__name {
+    font-family: 'dungeonregular', 'Georgia', serif;
+    font-size: 1.4rem;
+    color: #e0c097;
+    min-width: 140px;
+}
+
+.race-list__name-alt {
+    font-style: italic;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+.race-list__source {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* ── Race page ──────────────────────────────────────────────── */
+
+race-page {
+    display: block;
+}
+
+.race-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(139, 94, 60, 0.3);
+    padding-bottom: 1.2rem;
+}
+
+.race-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.race-header__name {
+    font-size: 2.6rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.race-header__source {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #999;
+    background: rgba(139, 94, 60, 0.12);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+/* ── Language toggle ────────────────────────────────────────── */
+
+.race-header__lang-toggle {
+    display: flex;
+    gap: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(139, 94, 60, 0.3);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #999;
+    padding: 0.3rem 0.9rem;
+    cursor: pointer;
+    font-family: 'LibreBaskerville', serif;
+    font-size: 0.85rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+    background: rgba(196, 149, 106, 0.15);
+    color: #e0c097;
+}
+
+.lang-btn.active {
+    background: rgba(196, 149, 106, 0.25);
+    color: #e0c097;
+    font-weight: bold;
+}
+
+/* ── Race lore ──────────────────────────────────────────────── */
+
+.race-lore h2,
+.race-features h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(139, 94, 60, 0.15);
+    padding-bottom: 0.4rem;
+}
+
+.race-lore article {
+    margin-bottom: 1.5rem;
+}
+
+.race-lore article h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+    color: #c4956a;
+}
+
+.race-lore article p {
+    line-height: 1.75;
+}
+
+/* ── Racial features ────────────────────────────────────────── */
+
+.race-features {
+    margin-top: 2rem;
+}
+
+.race-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.race-features li {
+    position: relative;
+    padding: 0.6rem 0 0.6rem 1.5rem;
+    border-bottom: 1px solid rgba(139, 94, 60, 0.08);
+    line-height: 1.65;
+}
+
+.race-features li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: #8b5e3c;
+    font-size: 0.6rem;
+    top: 0.85rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+    .category-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .banner img {
+        max-width: 90%;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+}
+
