@@ -1,23 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#e0c097"/>
-      <stop offset="50%" style="stop-color:#c4956a"/>
-      <stop offset="100%" style="stop-color:#8b5e3c"/>
+<svg
+   width="900"
+   height="220"
+   viewBox="0 0 900 220"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="banner.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.7283333"
+     inkscape:cx="515.81485"
+     inkscape:cy="216.10415"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <defs
+     id="defs6">
+    <linearGradient
+       id="textGrad"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#e0c097"
+         id="stop1" />
+      <stop
+         offset="50%"
+         style="stop-color:#c4956a"
+         id="stop2" />
+      <stop
+         offset="100%"
+         style="stop-color:#8b5e3c"
+         id="stop3" />
     </linearGradient>
-    <linearGradient id="ampGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#b8860b"/>
-      <stop offset="100%" style="stop-color:#8b6914"/>
+    <linearGradient
+       id="ampGrad"
+       x1="298.87916"
+       y1="35.229284"
+       x2="298.87916"
+       y2="112.43337"
+       gradientTransform="matrix(1.0083663,0,0,0.99170307,106,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#b8860b"
+         id="stop4" />
+      <stop
+         offset="100%"
+         style="stop-color:#8b6914"
+         id="stop5" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+    <filter
+       id="glow"
+       x="-0.07032967"
+       y="-0.075936225"
+       width="1.1406593"
+       height="1.1518725">
+      <feGaussianBlur
+         stdDeviation="2"
+         result="coloredBlur"
+         id="feGaussianBlur5" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="coloredBlur"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
       </feMerge>
     </filter>
-    <style>
+    <style
+       id="style6">
       @font-face {
         font-family: 'DragonFont';
         src: url('../css/custom-fonts/dragonlord-webfont.woff2') format('woff2'),
@@ -34,27 +106,102 @@
              url('../css/custom-fonts/librebaskerville-italic-webfont.woff') format('woff');
       }
     </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#textGrad"
+       id="linearGradient10"
+       x1="-19.300819"
+       y1="79.742849"
+       x2="-19.300819"
+       y2="234.45753"
+       gradientTransform="matrix(2.1248823,0,0,0.4706143,106,0)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#textGrad"
+       id="linearGradient11"
+       x1="205.86663"
+       y1="72.796705"
+       x2="205.86663"
+       y2="214.03469"
+       gradientTransform="matrix(1.9397906,0,0,0.51551955,106,0)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
-
   <!-- Decorative top line -->
-  <line x1="100" y1="15" x2="800" y2="15" stroke="#8b5e3c" stroke-width="1" opacity="0.5"/>
-
+  <line
+     x1="100"
+     y1="15"
+     x2="800"
+     y2="15"
+     stroke="#8b5e3c"
+     stroke-width="1"
+     opacity="0.5"
+     id="line6" />
   <!-- "Dungeons" -->
-  <text x="270" y="90" font-family="DragonFont, serif" font-size="72" fill="url(#textGrad)" filter="url(#glow)" text-anchor="end">Dungeons</text>
-
   <!-- "&" ampersand -->
-  <text x="340" y="105" font-family="DragonFont, serif" font-size="96" fill="url(#ampGrad)" filter="url(#glow)" text-anchor="middle">&amp;</text>
-
   <!-- "Dragons" -->
-  <text x="415" y="90" font-family="DragonFont, serif" font-size="72" fill="url(#textGrad)" filter="url(#glow)" text-anchor="start">Dragons</text>
-
   <!-- "Pedia" subtitle -->
-  <text x="450" y="155" font-family="DragonFont, serif" font-size="64" fill="#4d4d4d" text-anchor="middle" opacity="0.9">Pedia</text>
-
   <!-- Subtitle -->
-  <text x="450" y="190" font-family="LibreBaskervilleItalic, LibreBaskerville, serif" font-size="12" fill="#999" text-anchor="middle" font-style="italic">Compendium de règles pour la version 3.5</text>
-
+  <g
+     id="g11"
+     transform="translate(27.850848)">
+    <text
+       x="376"
+       y="90"
+       font-family="DragonFont, serif"
+       font-size="72px"
+       fill="url(#textGrad)"
+       filter="url(#glow)"
+       text-anchor="end"
+       id="text6"
+       style="fill:url(#linearGradient10)">Dungeons</text>
+    <text
+       x="446"
+       y="105"
+       font-family="DragonFont, serif"
+       font-size="96px"
+       fill="url(#ampGrad)"
+       filter="url(#glow)"
+       text-anchor="middle"
+       id="text7"
+       style="fill:url(#ampGrad)">&amp;</text>
+    <text
+       x="521"
+       y="90"
+       font-family="DragonFont, serif"
+       font-size="72px"
+       fill="url(#textGrad)"
+       filter="url(#glow)"
+       text-anchor="start"
+       id="text8"
+       style="fill:url(#linearGradient11)">Dragons</text>
+    <text
+       x="556"
+       y="155"
+       font-family="DragonFont, serif"
+       font-size="64px"
+       fill="#4d4d4d"
+       text-anchor="middle"
+       opacity="0.9"
+       id="text9">Pedia</text>
+    <text
+       x="556"
+       y="190"
+       font-family="LibreBaskervilleItalic, LibreBaskerville, serif"
+       font-size="12px"
+       fill="#999999"
+       text-anchor="middle"
+       font-style="italic"
+       id="text10">Compendium de règles pour la version 3.5</text>
+  </g>
   <!-- Decorative bottom line -->
-  <line x1="100" y1="205" x2="800" y2="205" stroke="#8b5e3c" stroke-width="1" opacity="0.5"/>
+  <line
+     x1="100"
+     y1="205"
+     x2="800"
+     y2="205"
+     stroke="#8b5e3c"
+     stroke-width="1"
+     opacity="0.5"
+     id="line10" />
 </svg>
-

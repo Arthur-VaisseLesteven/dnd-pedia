@@ -1,26 +1,22 @@
-let nom_de_race = {
-	'source': {
-		'en': ``,
-        'fr': ``
+{
+	"name": {
+		"en": "Dwarves",
+        "fr": "Nains"
 	},
-	'name': {
-		'en': ``,
-        'fr': ``
-	},
-	'lore': {
-		'en': [
-			{ 'title': ``, 'content': `` },
+	"lore": {
+		"en": [
+			{ "title": "Personality", "content": "Dwarves are slow to laugh or jest and suspicious of strangers, but they are generous to those few who earn their trust. Dwarves value gold, gems, jewelry, and art objects made with these precious materials, and they have been known to succumb to greed. They fight neither recklessly nor timidly, but with careful courage and tenacity. Their sense of justice is strong, but at its worst it can turn into a thirst for vengeance. Among gnomes, who get along famously with dwarves, a mild oath is “If I’m lying, may I cross a dwarf.”" },
 		],
-		'fr': [
-			{ 'title': ``, 'content': `` },
+		"fr": [
+            { "title": "Personnalité", "content": "Les nains sont lents à rire ou à plaisanter et se méfient des étrangers, mais ils sont généreux envers les rares personnes qui gagnent leur confiance. Ils accordent une grande valeur à l’or, aux gemmes, aux bijoux et aux objets d’art fabriqués avec ces matériaux précieux, et peuvent parfois succomber à l’avidité. Ils ne combattent ni avec imprudence ni avec timidité, mais avec un courage et une ténacité réfléchis. Leur sens de la justice est fort, mais il peut parfois se transformer en soif de vengeance. Parmi les gnomes, qui s’entendent très bien avec les nains, un serment léger est : « Si je mens, puisse-je croiser un nain. »" },
 		]
 	},
-	'racial-features': {
-		'en' : [
-			{ 'content': ``},
+	"racial-features": {
+		"en" : [
+			{ "content": "+2 Constitution, –2 Charisma: Dwarves are stout and tough but tend to be gruff and reserved."},
 		],
-		'fr': [
-            { 'content': `` },
+		"fr": [
+            { "content": "+2 en Constitution, –2 en Charisme : Les nains sont robustes et endurants, mais ont tendance à être bourrus et réservés." },
         ]
 	}
 }
