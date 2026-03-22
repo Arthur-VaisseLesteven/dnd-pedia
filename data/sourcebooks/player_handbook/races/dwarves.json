@@ -14,7 +14,7 @@
 			{ "title": "Religion", "content": " The chief deity of the dwarves is Moradin, the Soul Forger. He is the creator of the dwarves, and he expects his followers to work for the betterment of the dwarf race" },
 			{ "title": "Language", "content": "Dwarves speak Dwarven, which has its own runic script. Dwarven literature is marked by comprehensive histories of kingdoms and wars through the millennia. The Dwarven alphabet is also used (with minor variations) for the Gnome, Giant, Goblin, Orc, and Terran languages. Dwarves often speak the languages of their friends (humans and gnomes) and enemies. Some also learn Terran, the strange language of earth-based creatures such as xorns" },
 			{ "title": "Names", "content": "A dwarf ’s name is granted to him by his clan elder, in accordance with tradition. Every proper dwarven name has been used and reused down through the generations. A dwarf ’s name is not his own. It belongs to his clan. If he misuses it or brings shame to it, his clan will strip him of it. A dwarf stripped of his name is forbidden by dwarven law to use any dwarven name in its place" },
-			{ "title": "Adventurers", "content": "A dwarf adventurer may be motivated by crusading zeal, a love of excitement, or simple greed. As long as his accomplishments bring honor to his clan, his deeds earn him respect and status. Defeating giants and claiming powerful magic weapons are sure ways for a dwarf to earn the respect of other dwarves." },
+			{ "title": "Adventurers", "content": "A dwarf adventurer may be motivated by crusading zeal, a love of excitement, or simple greed. As long as his accomplishments bring honor to his clan, his deeds earn him respect and status. Defeating giants and claiming powerful magic weapons are sure ways for a dwarf to earn the respect of other dwarves." }
 		],
 		"fr": [
 			{ "content": "Les nains sont réputés pour leur habileté au combat, leur capacité à résister aux épreuves physiques et magiques, leur connaissance des secrets de la terre, leur travail acharné et leur talent pour boire de la bière. Leurs royaumes mystérieux, creusés à l’intérieur des montagnes, sont célèbres pour les trésors merveilleux qu’ils produisent, que ce soit en cadeau ou pour le commerce." },
@@ -45,7 +45,7 @@
 			{ "content": "+2 racial bonus on Appraise checks that are related to stone or metal items: Dwarves are familiar with valuable items of all kinds, especially those made of stone or metal"},
 			{ "content": "+2 racial bonus on Craft checks that are related to stone or metal: Dwarves are especially capable with stonework and metalwork."},
 			{ "content": "Automatic Languages: Common and Dwarven. Bonus Languages: Giant, Gnome, Goblin, Orc, Terran, and Undercommon. Dwarves are familiar with the languages of their enemies and of their subterranean allies."},
-			{ "content": "Favored Class: Fighter. A multiclass dwarf ’s fighter class does not count when determining whether he takes an experience point penalty for multiclassing. Dwarven culture extols the virtues of battle, and the vocation comes easily to dwarves."},
+			{ "content": "Favored Class: Fighter. A multiclass dwarf ’s fighter class does not count when determining whether he takes an experience point penalty for multiclassing. Dwarven culture extols the virtues of battle, and the vocation comes easily to dwarves."}
 		],
 		"fr": [
             { "content": "+2 en Constitution, –2 en Charisme : Les nains sont robustes et endurants, mais ont tendance à être bourrus et réservés." },
@@ -62,7 +62,7 @@
             { "content": "Bonus racial de +2 aux tests d’Évaluation liés aux objets en pierre ou en métal : Les nains sont familiers avec les objets de valeur de toutes sortes, en particulier ceux fabriqués en pierre ou en métal." },
             { "content": "Bonus racial de +2 aux tests d’Artisanat liés à la pierre ou au métal : Les nains sont particulièrement compétents dans le travail de la pierre et du métal." },
             { "content": "Langues automatiques : le Commun et le Nain. Langues bonus : Géant, Gnome, Gobelin, Orc, Terran et Commun des profondeurs. Les nains connaissent les langues de leurs ennemis et de leurs alliés souterrains." },
-            { "content": "Classe de prédilection : Guerrier. La classe de guerrier d’un nain multiclasse ne compte pas pour déterminer s’il subit une pénalité d’expérience pour le multiclassage. La culture naine exalte les vertus du combat, et cette vocation vient naturellement aux nains." },
+            { "content": "Classe de prédilection : Guerrier. La classe de guerrier d’un nain multiclasse ne compte pas pour déterminer s’il subit une pénalité d’expérience pour le multiclassage. La culture naine exalte les vertus du combat, et cette vocation vient naturellement aux nains." }
         ]
 	}
 }

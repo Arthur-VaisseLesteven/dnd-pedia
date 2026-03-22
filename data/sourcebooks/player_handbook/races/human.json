@@ -36,7 +36,7 @@
 			{ "content": "1 extra feat at 1st level, because humans are quick to master specialized tasks and varied in their talents."},
 			{ "content": "4 extra skill points at 1st level and 1 extra skill point at each additional level, since humans are versatile and capable"},
 			{ "content": "Automatic Language: Common. Bonus Languages: Any (other than secret languages, such as Druidic). See other racial lists for common languages or the Speak Language skill for a more comprehensive list. Humans mingle with all kinds of other folk and thus can learn any language found in an area."},
-			{ "content": "Favored Class: Any. When determining whether a multiclass human takes an experience point penalty, her highest-level class does not count."},
+			{ "content": "Favored Class: Any. When determining whether a multiclass human takes an experience point penalty, her highest-level class does not count."}
 		],
 		"fr": [
             { "content": "Taille moyenne : En tant que créatures de taille Moyenne, les humains n’ont ni bonus ni malus particuliers liés à leur taille." },
@@ -44,7 +44,7 @@
             { "content": "1 don supplémentaire au niveau 1, car les humains maîtrisent rapidement des tâches spécialisées et sont polyvalents dans leurs talents." },
             { "content": "4 points de compétence supplémentaires au niveau 1 et 1 point de compétence supplémentaire à chaque niveau suivant, car les humains sont polyvalents et capables." },
             { "content": "Langue automatique : le Commun. Langues bonus : n’importe quelle langue (à l’exception des langues secrètes, comme le druidique). Voir les autres listes raciales pour les langues courantes ou la compétence Parler une langue pour une liste plus exhaustive. Les humains côtoient toutes sortes de peuples et peuvent donc apprendre n’importe quelle langue présente dans une région." },
-            { "content": "Classe de prédilection : aucune. Lorsqu’un humain multiclasse subit une pénalité d’expérience, sa classe de niveau le plus élevé n’est pas prise en compte." },
+            { "content": "Classe de prédilection : aucune. Lorsqu’un humain multiclasse subit une pénalité d’expérience, sa classe de niveau le plus élevé n’est pas prise en compte." }
         ]
 	}
 }
