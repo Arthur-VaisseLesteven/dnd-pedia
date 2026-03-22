@@ -42,7 +42,7 @@ public class SiteGenerator {
         SourcebookLibrary library = new SourcebookLibrary(data);
 
         for (Race race : library.races()) {
-            buildRacePage(race);
+            siteFiles.create(race);
         }
         buildRaceIndex(library.races());
 
@@ -52,12 +52,9 @@ public class SiteGenerator {
         buildSourcebookIndex(library.sourcebooks());
     }
 
-    private void buildRacePage(Race race) {
-        LOGGER.warn("cannot paginate {}, race page not yet implemented", race.name().en());
-    }
-
     private void buildRaceIndex(Collection<Race> races) {
         siteFiles.createIndex(
+                "Races",
                 Path.of("./races"),
                 new Index(
                         List.of(

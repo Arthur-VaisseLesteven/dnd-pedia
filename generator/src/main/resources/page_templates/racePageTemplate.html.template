@@ -10,13 +10,13 @@
 <body>
 
 <page-header base-url=".."></page-header>
-<content-table ${columns}></content-table>
+<race-display></race-display>
 
 <script src="../js/components/page-header.js" type="text/javascript"></script>
-<script src="../js/components/contentTable.js" type="text/javascript"></script>
+<script src="../js/components/race-display.js" type="text/javascript"></script>
 <script type="text/javascript">
-    let theContentTable = document.querySelector('content-table');
-${content}
+    let raceDisplay = document.querySelector('race-display');
+    raceDisplay.setData(${source}, ${content});
 </script>
 </body>
 </html>

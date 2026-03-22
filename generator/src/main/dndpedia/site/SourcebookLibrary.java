@@ -30,7 +30,8 @@ public class SourcebookLibrary {
         Sourcebook sourcebook = new Sourcebook();
 
         try {
-            sourcebook.setTitle(objectMapper.readValue(sourcebookDirectory.title(), Name.class));
+            String rawTitle = sourcebookDirectory.title();
+            sourcebook.setTitle(objectMapper.readValue(rawTitle, Name.class), rawTitle);
             LOGGER.info("processing {}", sourcebook.title().en());
 
             for (String raceContent : sourcebookDirectory.races()) {
