@@ -1,29 +1,40 @@
 package dndpedia.site;
 
-import dndpedia.site.model.Race;
-import dndpedia.site.model.Sourcebook;
+import dndpedia.site.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.nio.file.Path;
 import java.util.Collection;
-import java.util.Objects;
+import java.util.List;
+import java.util.Map;
+
+import static java.util.Objects.requireNonNull;
 
 public class SiteGenerator {
-    private static final Logger logger = LogManager.getLogger(SiteGenerator.class);
+    private static final Logger LOGGER = LogManager.getLogger(SiteGenerator.class);
 
     public static void main(String... commandLineParameters) {
-        String projectRoot = Objects.requireNonNull(System.getenv("PROJECT_ROOT"), "Missing environment variable : PROJECT_ROOT");
+        Path templateDirectory = Path.of(getEnv("TEMPLATE_DIRECTORY"));
+        Path siteDirectory = Path.of(getEnv("SITE_DIRECTORY"));
+        Path sourcesDirectory = Path.of(getEnv("SOURCES_DIRECTORY"));
 
         new SiteGenerator(
-                new DataLocator(Path.of(projectRoot))
+                new DataLocator(sourcesDirectory),
+                new SiteFiles(siteDirectory, templateDirectory)
         ).generateSite();
     }
 
-    private final DataLocator dataLocator;
+    private static String getEnv(String environmentVariableName) {
+        return requireNonNull(System.getenv(environmentVariableName), "Missing environment variable : " + environmentVariableName);
+    }
 
-    public SiteGenerator(DataLocator dataLocator) {
+    private final DataLocator dataLocator;
+    private final SiteFiles siteFiles;
+
+    public SiteGenerator(DataLocator dataLocator, SiteFiles siteFiles) {
         this.dataLocator = dataLocator;
+        this.siteFiles = siteFiles;
     }
 
     private void generateSite() {
@@ -42,19 +53,34 @@ public class SiteGenerator {
     }
 
     private void buildRacePage(Race race) {
-        logger.warn("cannot paginate {}, race page not yet implemented", race.name().en());
+        LOGGER.warn("cannot paginate {}, race page not yet implemented", race.name().en());
     }
 
     private void buildRaceIndex(Collection<Race> races) {
-        logger.warn("cannot index races, race index not yet implemented");
+        siteFiles.createIndex(
+                Path.of("./races"),
+                new Index(
+                        List.of(
+                                new LocalizedString("Race", "Race"),
+                                new LocalizedString("Source", "Source")
+                        ),
+                        races.stream().map(race -> new IndexedElement(
+                                race.name().fr(),
+                                Map.of(
+                                        "Race", race.name(),
+                                        "Source", race.sourcebook().title()
+                                )
+                        )).toList()
+                )
+        );
     }
 
     private void buildSourcebookPage(Sourcebook sourcebook) {
-        logger.warn("cannot paginate {}, sourcebook page not yet implemented", sourcebook.title().en());
+        LOGGER.warn("cannot paginate {}, sourcebook page not yet implemented", sourcebook.title().en());
     }
 
     private void buildSourcebookIndex(Collection<Sourcebook> sourcebooks) {
-        logger.warn("cannot index sourcebooks, sourcebooks indexes not yet implemented");
+        LOGGER.warn("cannot index sourcebooks, sourcebooks indexes not yet implemented");
     }
 
 

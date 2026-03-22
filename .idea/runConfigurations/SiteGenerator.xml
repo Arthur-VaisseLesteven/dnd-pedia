@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SiteGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
+    <envs>
+      <env name="SITE_DIRECTORY" value="$PROJECT_DIR$/site" />
+      <env name="SOURCES_DIRECTORY" value="$PROJECT_DIR$/data/sourcebooks" />
+      <env name="TEMPLATE_DIRECTORY" value="$PROJECT_DIR$/generator/src/main/resources/page_templates" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="dndpedia.site.SiteGenerator" />
+    <module name="generator" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="dndpedia.site.model.Sourcebook" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

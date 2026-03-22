@@ -1,0 +1,66 @@
+.category-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.category-card {
+    position: relative;
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #16213e;
+    border: 1px solid rgba(139, 94, 60, 0.25);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(196, 149, 106, 0.2),
+                0 2px 8px rgba(0, 0, 0, 0.4);
+    border-color: rgba(196, 149, 106, 0.5);
+}
+
+.category-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.85);
+    transition: filter 0.25s ease;
+}
+
+.category-card:hover .category-card__image {
+    filter: brightness(1);
+}
+
+.category-card__body {
+    padding: 1.2rem 1.5rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-card__title {
+    font-family: 'dungeonregular', 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #e0c097;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.category-card__subtitle {
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+}

@@ -13,7 +13,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class SourcebookLibrary {
-    private static final Logger logger = LogManager.getLogger(SourcebookLibrary.class);
+    private static final Logger LOGGER = LogManager.getLogger(SourcebookLibrary.class);
     private final Collection<Sourcebook> sourcebooks;
 
     public SourcebookLibrary(Collection<SourcebookDirectory> sourcebookDirectories) {
@@ -31,13 +31,13 @@ public class SourcebookLibrary {
 
         try {
             sourcebook.setTitle(objectMapper.readValue(sourcebookDirectory.title(), Name.class));
-            logger.info("processing {}", sourcebook.title().en());
+            LOGGER.info("processing {}", sourcebook.title().en());
 
             for (String raceContent : sourcebookDirectory.races()) {
-                logger.debug("reading {}", raceContent);
+                LOGGER.debug("reading {}", raceContent);
                 Name name = objectMapper.readValue(raceContent, Name.class);
                 sourcebook.addRace(name, raceContent);
-                logger.info("Read race {}", name.name().en());
+                LOGGER.info("Read race {}", name.name().en());
             }
         } catch (Exception exception) {
             throw new IllegalStateException(exception);
