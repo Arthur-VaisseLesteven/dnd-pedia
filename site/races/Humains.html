@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Dodouce - Humains</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../js/components/page-header.css">
+</head>
+<body>
+
+<page-header base-url=".."></page-header>
+<race-display></race-display>
+
+<script src="../js/components/page-header.js" type="text/javascript"></script>
+<script src="../js/components/race-display.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let raceDisplay = document.querySelector('race-display');
+    raceDisplay.setData({
+  "name": {
+    "fr": "Manuel du Joueur",
+    "en": "Player Handbook"
+  }
+}
+, {
+	"name": {
+		"fr": "Humains",
+		"en": "Humans"
+	},
+	"lore": {
+		"en": [
+			{ "content": "Most humans are the descendants of pioneers, conquerors, traders, travelers, refugees, and other people on the move. As a result, human lands are home to a mix of people—physically, culturally, religiously, and politically different. Hardy or fine, light-skinned or dark, showy or austere, primitive or civilized, devout or impious, humans run the gamut." },
+			{ "title": "Personality", "content": "Humans are the most adaptable, flexible, and ambitious people among the common races. They are diverse in their tastes, morals, customs, and habits. Others accuse them of having little respect for history, but it’s only natural that humans, with their relatively short life spans and constantly changing cultures, would have a shorter collective memory than dwarves, elves, gnomes, or halflings" },
+			{ "title": "Physical Description", "content": "Humans typically stand from 5 feet to a little over 6 feet tall and weigh from 125 to 250 pounds, with men noticeably taller and heavier than women. Thanks to their penchant for migration and conquest, and to their short life spans, humans are more physically diverse than other common races. Their skin shades range from nearly black to very pale, their hair from black to blond (curly, kinky, or straight), and their facial hair (for men) from sparse to thick. Plenty of humans have a dash of nonhuman blood, and they may demonstrate hints of elf, orc, or other lineages. Members of this race are often ostentatious or unorthodox in their grooming and dress, sporting unusual hairstyles, fanciful clothes, tattoos, body piercings, and the like. Humans have short life spans, reaching adulthood at about age 15 and rarely living even a single century" },
+			{ "title": "Relations", "content": "Just as readily as they mix with each other, humans mix with members of other races, among which they are known as “everyone’s second-best friends.” Humans serve as ambassadors, diplomats, magistrates, merchants, and functionaries of all kinds"},
+			{ "title": "Alignment", "content": "Humans tend toward no particular alignment, not even neutrality. The best and the worst are found among them"},
+			{ "title": "Human Lands", "content": "Human lands are usually in flux, with new ideas, social changes, innovations, and new leaders constantly coming to the fore. Members of longer-lived races find human culture exciting but eventually a little wearying or even bewildering. Since humans lead such short lives, their leaders are all young compared to the political, religious, and military leaders among the other races. Even where individual humans are conservative traditionalists, human institutions change with the generations, adapting and evolving faster than parallel institutions among the elves, dwarves, gnomes, and halflings. Individually and as a group, humans are adaptable opportunists, and they stay on top of changing political dynamics. Human lands generally include relatively large numbers of nonhumans (compared, for instance, to the number of nondwarves who live in dwarven lands)." },
+			{ "title": "Religion", "content": "Unlike members of the other common races, humans do not have a chief racial deity. Pelor, the sun god, is the most commonly worshiped deity in human lands, but he can claim nothing like the central place that the dwarves give Moradin or the elves give Corellon Larethian in their respective pantheons. Some humans are the most ardent and zealous adherents of a given religion, while others are the most impious people around." },
+			{ "title": "Language", "content": "Humans speak Common. They typically learn other languages as well, including obscure ones, and they are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elven musical expressions, Dwarven military phrases, and so on."},
+			{ "title": "Names", "content": "Human names vary greatly. Without a unifying deity to give them a touchstone for their culture, and with such a fast breeding cycle, humans mutate socially at a fast rate. Human culture, therefore, is more diverse than other cultures, and no human names are truly typical. Some human parents give their children dwarven or elven names (pronounced more or less correctly)"},
+			{ "title": "Adventurers", "content": "Human adventurers are the most audacious, daring, and ambitious members of an audacious, daring, and ambitious race. A human can earn glory in the eyes of her fellows by amassing power, wealth, and fame. Humans, more than other people, champion causes rather than territories or groups."}
+		],
+		"fr": [
+			{ "content": "La plupart des humains sont les descendants de pionniers, conquérants, marchands, voyageurs, réfugiés et autres personnes en mouvement. En conséquence, les terres humaines abritent un mélange de peuples — physiquement, culturellement, religieusement et politiquement différents. Robustes ou délicats, à la peau claire ou foncée, ostentatoires ou sobres, primitifs ou civilisés, pieux ou impies, les humains couvrent toute la gamme des possibilités." },
+			{ "title": "Personnalité", "content": "Les humains sont le peuple le plus adaptable, flexible et ambitieux parmi les races communes. Leurs goûts, leurs morales, leurs coutumes et leurs habitudes sont d’une grande diversité. Certains leur reprochent de manquer de respect pour l’histoire, mais il est naturel que les humains, avec leur espérance de vie relativement courte et leurs cultures en perpétuel changement, aient une mémoire collective moins longue que celle des nains, des elfes, des gnomes ou des halfelins." },
+			{ "title": "Description physique", "content": "Les humains mesurent généralement entre 1,50 m et un peu plus de 1,80 m, pour un poids variant de 55 à 110 kg, les hommes étant en moyenne plus grands et plus lourds que les femmes. Grâce à leur penchant pour la migration et la conquête, ainsi qu’à leur brève existence, ils présentent une diversité physique bien plus marquée que les autres races. Leur teint va du noir profond au pâle le plus clair, leurs cheveux du noir au blond (frisés, crépus ou raides), et leur pilosité faciale (chez les hommes) de clairsemée à épaisse. Beaucoup portent en eux une touche de sang non humain, trahissant des ascendances elfiques, orques ou autres. Les membres de cette race aiment se distinguer par des coiffures inhabituelles, des vêtements fantaisistes, des tatouages, des piercings et autres marques personnelles. Leur vie est courte : ils atteignent l’âge adulte vers 15 ans et dépassent rarement un siècle." },
+			{ "title": "Relations", "content": "Tout comme ils se mélangent facilement entre eux, les humains s’intègrent aisément aux autres races, parmi lesquelles on les surnomme souvent « les seconds meilleurs amis de tous ». Ils occupent des rôles d’ambassadeurs, de diplomates, de magistrats, de marchands ou de fonctionnaires de tous horizons." },
+			{ "title": "Alignement", "content": "Les humains ne penchent vers aucun alignement en particulier, pas même la neutralité. On trouve parmi eux le meilleur comme le pire." },
+			{ "title": "Terres humaines", "content": "Les territoires humains sont rarement stables : idées nouvelles, changements sociaux, innovations et dirigeants émergent en permanence. Les membres des races au longévives jugent leur culture excitante, mais finissent par la trouver épuisante, voire déconcertante. Étant donné leur courte existence, leurs dirigeants sont toujours jeunes comparés aux figures politiques, religieuses ou militaires des autres peuples. Même lorsque les humains sont des traditionalistes conservateurs, leurs institutions évoluent avec les générations, s’adaptant et se transformant plus vite que celles des elfes, des nains, des gnomes ou des halfelins. Individuellement ou collectivement, les humains sont des opportunistes adaptables, toujours à l’affût des dynamiques politiques changeantes. Leurs terres abritent généralement un nombre relativement élevé de non-humains (contrairement, par exemple, au faible nombre de non-nains vivant en terres naines)." },
+			{ "title": "Religion", "content": "Contrairement aux autres races, les humains n’ont pas de divinité raciale principale. Pelor, le dieu du soleil, est le plus vénéré dans leurs contrées, mais il n’occupe pas une place centrale comme Moradin chez les nains ou Corellon Larethian chez les elfes. Certains humains sont les adeptes les plus fervents et zélés d’une religion, tandis que d’autres comptent parmi les êtres les plus impies qui soient." },
+			{ "title": "Langue", "content": "Les humains parlent le Commun. Ils apprennent souvent d’autres langues, y compris les plus obscures, et aiment parsemer leur discours de mots empruntés à d’autres peuples : jurons orques, expressions musicales elfiques, phrases militaires naines, etc." },
+			{ "title": "Noms", "content": "Les noms humains varient énormément. Sans divinité unificatrice pour ancrer leur culture, et avec un cycle de reproduction rapide, leur société mute à un rythme effréné. Leur culture est donc plus diverse que celle des autres races, et aucun nom humain n’est vraiment typique. Certains parents donnent même à leurs enfants des noms nains ou elfiques (plus ou moins bien prononcés)." },
+			{ "title": "Aventuriers", "content": "Les aventuriers humains sont les membres les plus audacieux, intrépides et ambitieux d’une race déjà audacieuse, intrépide et ambitieuse. Un humain peut gagner la gloire aux yeux de ses pairs en accumulant pouvoir, richesse et renommée. Plus que les autres, les humains défendent des causes plutôt que des territoires ou des groupes." }
+		]
+	},
+	"racial-features": {
+		"en" : [
+			{ "content": "Medium: As Medium creatures, humans have no special bonuses or penalties due to their size."},
+			{ "content": "Human base land speed is 30 feet"},
+			{ "content": "1 extra feat at 1st level, because humans are quick to master specialized tasks and varied in their talents."},
+			{ "content": "4 extra skill points at 1st level and 1 extra skill point at each additional level, since humans are versatile and capable"},
+			{ "content": "Automatic Language: Common. Bonus Languages: Any (other than secret languages, such as Druidic). See other racial lists for common languages or the Speak Language skill for a more comprehensive list. Humans mingle with all kinds of other folk and thus can learn any language found in an area."},
+			{ "content": "Favored Class: Any. When determining whether a multiclass human takes an experience point penalty, her highest-level class does not count."}
+		],
+		"fr": [
+            { "content": "Taille moyenne : En tant que créatures de taille Moyenne, les humains n’ont ni bonus ni malus particuliers liés à leur taille." },
+            { "content": "Vitesse de déplacement de base : 9 mètres (30 pieds) au sol." },
+            { "content": "1 don supplémentaire au niveau 1, car les humains maîtrisent rapidement des tâches spécialisées et sont polyvalents dans leurs talents." },
+            { "content": "4 points de compétence supplémentaires au niveau 1 et 1 point de compétence supplémentaire à chaque niveau suivant, car les humains sont polyvalents et capables." },
+            { "content": "Langue automatique : le Commun. Langues bonus : n’importe quelle langue (à l’exception des langues secrètes, comme le druidique). Voir les autres listes raciales pour les langues courantes ou la compétence Parler une langue pour une liste plus exhaustive. Les humains côtoient toutes sortes de peuples et peuvent donc apprendre n’importe quelle langue présente dans une région." },
+            { "content": "Classe de prédilection : aucune. Lorsqu’un humain multiclasse subit une pénalité d’expérience, sa classe de niveau le plus élevé n’est pas prise en compte." }
+        ]
+	}
+}
+);
+</script>
+</body>
+</html>
