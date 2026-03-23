@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Half-Elves",
+    "fr": ""
+  },
+  "lore": {
+    "en": [
+      { "content": "Humans and elves sometimes wed, the elf attracted to the human’s\nenergy and the human to the elf ’s grace. These marriages end\nquickly as elves count years because a human’s life is so brief, but\nthey leave an enduring legacy—half-elf children.\nThe life of a half-elf can be hard. If raised by elves, the half-elf\nseems to grow with astounding speed, reaching maturity within\ntwo decades. The half-elf becomes an adult long before she has\nhad time to learn the intricacies of elven art and culture, or even\ngrammar. She leaves behind her childhood friends, becoming\nphysically an adult but culturally still a child by elven standards.\nTypically, she leaves her elven home, which is no longer familiar,\nand finds her way among humans.\nIf, on the other hand, she is raised by humans, the half-elf finds\nherself different from her peers: more aloof, more sensitive, less\nambitious, and slower to mature. Some half-elves try to fit in\namong humans, while others find their identities in their differences. Most find places for themselves in human lands, but some\nfeel like outsiders all their lives." },
+      { "title": "Personality", "content": "Most half-elves have the curiosity, inventiveness,\nand ambition of the human parent, along with the refined senses,\nlove of nature, and artistic tastes of the elf parent." },
+      { "title": "Physical Description", "content": "To humans, half-elves look like elves. To\nelves, they look like humans—indeed, elves call them halfhumans. Half-elf height ranges from under 5 feet to about 6 feet\ntall, and weight usually ranges from 100 to 180 pounds. Half-elf\nmen are taller and heavier than half-elf women, but the difference\nis less pronounced than that found among humans. Half-elves are\npaler, fairer, and smoother-skinned than their human parents, but\ntheir actual skin tone, hair color, and other details vary just as\nhuman features do. Half-elves’ eyes are green, just as are those of\ntheir elf parents. A half-elf reaches adulthood at age 20 and can\nlive to be more than 180 years old.\nMost half-elves are the children of human–elf pairings. Some,\nhowever, are the children of parents who themselves are partly\nhuman and partly elf. Some of these “second generation” halfelves have humanlike eyes, but most still have green eyes." },
+      { "title": "Relations", "content": "Half-elves do well among both elves and humans,\nand they also get along well with dwarves, gnomes, and halflings.\nThey have elven grace without elven aloofness and human energy\nwithout human boorishness. They make excellent ambassadors\nand go-betweens (except between elves and humans, since each\nside suspects the half-elf of favoring the other). In human lands\nwhere elves are distant or not on friendly terms with other races,\nhowever, half-elves are viewed with suspicion.\nSome half-elves show a marked disfavor toward half-orcs. Perhaps the similarity between themselves and half-orcs (a partly\nhuman lineage) makes these half-elves uncomfortable." },
+      { "title": "Alignment", "content": "Half-elves share the chaotic bent of their elven\nheritage, but, like humans, they tend toward both good and evil in\nequal proportion. Like elves, they value personal freedom and creative expression, demonstrating neither love of leaders nor desire\nfor followers. They chafe at rules, resent others’ demands, and\nsometimes prove unreliable, or at least unpredictable." },
+      { "title": "Half-Elven Lands", "content": "Half-elves have no lands of their own,\nthough they are welcome in human cities and elven forests. In large\ncities, half-elves sometimes form small communities of their own." },
+      { "title": "Religion", "content": "Half-elves raised among elves follow elven deities,\nprincipally Corellon Larethian (god of the elves). Those raised\namong humans often follow Ehlonna (goddess of the woodlands)." },
+      { "title": "Language", "content": "Half-elves speak the languages they are born to,\nCommon and Elven. Half-elves are slightly clumsy with the intricate Elven language, though only elves notice, and even so halfelves do better than nonelves." },
+      { "title": "Names", "content": "Half-elves use either human or elven naming conventions. Ironically, a half-elf raised among humans is often given an elven name in honor of her heritage, just as a half-elf raised\namong elves often takes a human name." },
+      { "title": "Adventurers", "content": "Half-elves find themselves drawn to strange\ncareers and unusual company. Taking up the life of an adventurer\ncomes easily to many of them. Like elves, they are driven by wanderlust." }
+    ],
+    "fr": [
+    ]
+  },
+  "racial-features": {
+    "en" : [
+      { "content": "Medium: As Medium creatures, half-elves have no special\nbonuses or penalties due to their size."},
+      { "content": "Half-elf base land speed is 30 feet."},
+      { "content": "Immunity to sleep spells and similar magical effects, and a +2\nracial bonus on saving throws against enchantment spells or\neffects."},
+      { "content": "Low-Light Vision: A half-elf can see twice as far as a human in\nstarlight, moonlight, torchlight, and similar conditions of poor\nillumination. She retains the ability to distinguish color and\ndetail under these conditions."},
+      { "content": "+1 racial bonus on Listen, Search, and Spot checks: A half-elf\ndoes not have the elf ’s ability to notice secret doors simply by\npassing near them. Half-elves have keen senses, but not as keen\nas those of an elf."},
+      { "content": "+2 racial bonus on Diplomacy and Gather Information checks:\nHalf-elves get along naturally with all people."},
+      { "content": "Elven Blood: For all effects related to race, a half-elf is considered an elf. Half-elves, for example, are just as vulnerable to\nspecial effects that affect elves as their elf ancestors are, and\nthey can use magic items that are only usable by elves. "},
+      { "content": "Automatic Languages: Common and Elven. Bonus Languages:\nAny (other than secret languages, such as Druidic). Half-elves\nhave all the versatility and broad (if shallow) experience that\nhumans have."},
+      { "content": " Favored Class: Any. When determining whether a multiclass\nhalf-elf takes an experience point penalty, her highest-level\nclass does not count"}
+    ],
+    "fr": [
+    ]
+  }
+}
