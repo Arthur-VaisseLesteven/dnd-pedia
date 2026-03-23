@@ -52,13 +52,13 @@ class RaceDisplay extends HTMLElement {
             <h1>${this.#title()}</h1>
 
             <section>
-                <h2>${headers.description}</h2>
-                ${this.#lore()}
+                <h2>${headers.racialFeatures}</h2>
+                ${this.#racialFeatures()}
             </section>
 
             <section>
-                <h2>${headers.racialFeatures}</h2>
-                ${this.#racialFeatures()}
+                <h2>${headers.description}</h2>
+                ${this.#lore()}
             </section>
 
             ${headers.source} : ${this.#source()}
