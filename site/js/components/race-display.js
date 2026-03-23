@@ -2,12 +2,28 @@ class RaceDisplay extends HTMLElement {
 
     constructor() {
         super();
+        this.lang = 'fr';
+
+        document.addEventListener('selectedLanguage', (e) => {
+            this.lang = e.detail.language;
+            if (this.data) {
+                this.render();
+            }
+        });
     }
 
     setData(source, data) {
          this.source = source;
          this.data = data;
-         this.lang = 'fr';
+         this.render();
+    }
+
+    render() {
+         const sectionHeaders = {
+             fr: { description: 'Description', racialFeatures: 'Particularités Raciales', source: 'Source' },
+             en: { description: 'Description', racialFeatures: 'Racial Features', source: 'Source' }
+         };
+         const headers = sectionHeaders[this.lang] || sectionHeaders['en'];
 
          this.innerHTML = `
             <style>
@@ -36,16 +52,16 @@ class RaceDisplay extends HTMLElement {
             <h1>${this.#title()}</h1>
 
             <section>
-                <h2>Description</h2>
+                <h2>${headers.description}</h2>
                 ${this.#lore()}
             </section>
 
             <section>
-                <h2>Particularités Raciale</h2>
+                <h2>${headers.racialFeatures}</h2>
                 ${this.#racialFeatures()}
             </section>
 
-            Source : ${this.#source()}
+            ${headers.source} : ${this.#source()}
          `;
     }
 
