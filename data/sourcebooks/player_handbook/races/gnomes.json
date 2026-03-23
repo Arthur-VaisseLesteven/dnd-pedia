@@ -1,0 +1,46 @@
+{
+  "name": {
+    "en": "Gnomes",
+    "fr": ""
+  },
+  "lore": {
+    "en": [
+      { "content": "Gnomes are welcome everywhere as technicians, alchemists, and\ninventors. Despite the demand for their skills, most gnomes prefer\nto remain among their own kind, living in comfortable burrows\nbeneath rolling, wooded hills where animals abound." },
+      { "title": "Personality", "content": "Gnomes adore animals, beautiful gems, and jokes\nof all kinds. Members of this race have a great sense of humor,\nand while they love puns, jokes, and games, they also relish\ntricks—the more intricate the better. They apply the same dedication to more practical arts, such as engineering, as they do to\ntheir pranks.\nGnomes are inquisitive. They love to find things out by personal\nexperience. At times they’re even reckless. Their curiosity makes\nthem skilled engineers, since they are always trying new ways to build things. Sometimes a gnome pulls a prank just to see how the\npeople involved will react." },
+      { "title": "Physical Description", "content": "Gnomes stand about 3 to 3-1/2 feet tall\nand weigh 40 to 45 pounds. Their skin ranges from dark tan to\nwoody brown, their hair is fair, and their eyes can be any shade of\nblue. Gnome males prefer short, carefully trimmed beards.\nGnomes generally wear leather or earth tones, and they decorate\ntheir clothes with intricate stitching or fine jewelry. Gnomes\nreach adulthood at about age 40, and they typically live about 350\nyears, though some can live almost 500 years." },
+      { "title": "Relations", "content": "Gnomes get along well with dwarves, who share\ntheir love of precious objects, their curiosity about mechanical\ndevices, and their hatred of goblins and giants. They enjoy the\ncompany of halflings, especially those who are easygoing enough\nto put up with pranks and jests. Most gnomes are a little suspicious of the taller races—humans, elves, half-elves, and halforcs—but they are rarely hostile or malicious." },
+      { "title": "Gnome Lands", "content": "Gnomes make their homes in hilly, wooded\nlands. They live underground but get more fresh air than dwarves\ndo, enjoying the natural, living world on the surface whenever\nthey can. Their homes are well hidden by both clever construction\nand illusions. Those who come to visit and are welcome are ushered into the bright, warm burrows. Those who are not welcome\nnever find the burrows in the first place.\nGnomes who settle in human lands are commonly gemcutters,\nmechanics, sages, or tutors. Some human families retain gnome\ntutors. During his life, a gnome tutor can teach several generations\nof a single human family." },
+      { "title": "Religion", "content": " The chief gnome god is Garl Glittergold, the Watchful Protector. His clerics teach that gnomes are to cherish and support their communities. Pranks are seen as ways to lighten spirits\nand to keep gnomes humble, not as ways for pranksters to triumph over those they trick." },
+      { "title": "Language", "content": "The Gnome language, which uses the Dwarven\nscript, is renowned for its technical treatises and its catalogs of\nknowledge about the natural world. Human herbalists, naturalists,\nand engineers commonly learn Gnome in order to read the best\nbooks on their topics of study." },
+      { "title": "Names", "content": "Gnomes love names, and most have half a dozen or\nso. As a gnome grows up, his mother gives him a name, his\nfather gives him a name, his clan elder gives him a name, his\naunts and uncles give him names, and he gains nicknames from\njust about anyone. Gnome names are typically variants on the\nnames of ancestors or distant relatives, though some are purely\nnew inventions. When dealing with humans and others who are\nrather “stuffy” about names, a gnome learns to act as if he has no\nmore than three names: a personal name, a clan name, and a\nnickname. When deciding which of his several names to use\namong humans, a gnome generally chooses the one that’s the\nmost fun to say. Gnome clan names are combinations of\ncommon Gnome words, and gnomes almost always translate\nthem into Common when in human lands (or into Elven when\nin elven lands, and so on)." },
+      { "title": "Male Names", "content": "Boddynock, Dimble, Fonkin, Gimble, Glim,\nGerbo, Jebeddo, Namfoodle, Roondar, Seebo, Zook." },
+      { "title": "Female Names", "content": "Bimpnottin, Caramip, Duvamil, Ellywick,\nEllyjobell, Loopmottin, Mardnab, Roywyn, Shamil, Waywocket" },
+      { "title": "Clan Names", "content": "Beren, Daergel, Folkor, Garrick, Nackle, Murnig,\nNingel, Raulnor, Scheppen, Turen." },
+      { "title": "Nicknames", "content": " Aleslosh, Ashhearth, Badger, Cloak, Doublelock,\nFilchbatter, Fnipper, Oneshoe, Sparklegem, Stumbleduck." },
+      { "title": "Adventurers", "content": "Gnomes are curious and impulsive. They may\ntake up adventuring as a way to see the world or for the love of\nexploring. Lawful gnomes may adventure to set things right and\nto protect the innocent, demonstrating the same sense of duty\ntoward society as a whole that gnomes generally exhibit toward\ntheir own enclaves. As lovers of gems and other fine items, some\ngnomes take to adventuring as a quick, if dangerous, path to\nwealth. Depending on his relations to his home clan, an adventuring gnome may be seen as a vagabond or even as something of a\ntraitor (for abandoning clan responsibilities)." }
+    ],
+    "fr": [
+
+    ]
+  },
+  "racial-features": {
+    "en" : [
+      { "content": "+2 Constitution, –2 Strength: Like dwarves, gnomes are tough,\nbut they are small and therefore not as strong as larger\nhumanoids."},
+      { "content": "Small: As a Small creature, a gnome gains a +1 size bonus to\nArmor Class, a +1 size bonus on attack rolls, and a +4 size bonus\non Hide checks, but he uses smaller weapons than humans use,\nand his lifting and carrying limits are three-quarters of those of\na Medium character."},
+      { "content": "Gnome base land speed is 20 feet."},
+      { "content": "Low-Light Vision: A gnome can see twice as far as a human in\nstarlight, moonlight, torchlight, and similar conditions of poor\nillumination. He retains the ability to distinguish color and\ndetail under these conditions."},
+      { "content": "Weapon Familiarity: Gnomes may treat gnome hooked hammers as martial weapons rather than exotic weapons."},
+      { "content": "+2 racial bonus on saving throws against illusions: Gnomes are\ninnately familiar with illusions of all kinds."},
+      { "content": "Add +1 to the Difficulty Class for all saving throws against illusion spells cast by gnomes. Their innate familiarity with these\neffects make their illusions more difficult to see through. This\nadjustment stacks with those from similar effects, such as the\nSpell Focus feat"},
+      { "content": "+1 racial bonus on attack rolls against kobolds and goblinoids\n(including goblins, hobgoblins, and bugbears): Gnomes battle\nthese creatures frequently and practice special techniques for\nfighting them."},
+      { "content": "+4 dodge bonus to Armor Class against monsters of the giant\ntype (such as ogres, trolls, and hill giants): This bonus represents special training that gnomes undergo, during which they\nlearn tricks that previous generations developed in their battles\nwith giants. Any time a creature loses its Dexterity bonus (if\nany) to Armor Class, such as when it’s caught flat-footed, it loses\nits dodge bonus, too."},
+      { "content": "+2 racial bonus on Listen checks: Gnomes have keen ears."},
+      { "content": "+2 racial bonus on Craft (alchemy) checks: A gnome’s sensitive\nnose allows him to monitor alchemical processes by smell."},
+      { "content": "Automatic Languages: Common and Gnome. Bonus Languages:\nDraconic, Dwarven, Elven, Giant, Goblin, and Orc. Gnomes deal\nmore with elves and dwarves than elves and dwarves deal with\none another, and they learn the languages of their enemies\n(kobolds, giants, goblins, and orcs) as well. In addition, a gnome\ncan speak with a burrowing mammal (a badger, fox, rabbit, or the\nlike, see below). This ability is innate to gnomes. See the speak\nwith animals spell description."},
+      { "content": "Spell-Like Abilities: 1/day—speak with animals (burrowing\nmammal only, duration 1 minute). A gnome with a Charisma\nscore of at least 10 also has the following spell-like abilities:\n1/day—dancing lights, ghost sound, prestidigitation. Caster level\n1st; save DC 10 + gnome’s Cha modifier + spell level."},
+      { "content": "Favored Class: Bard. A multiclass gnome’s bard class does not\ncount when determining whether he takes an experience point\npenalty"}
+    ],
+    "fr": [
+    ]
+  }
+}
