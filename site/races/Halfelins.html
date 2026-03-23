@@ -1,4 +1,31 @@
-{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Dodouce - Halfelins</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../js/components/page-header.css">
+    <link rel="stylesheet" href="../js/components/language-selector.css">
+</head>
+<body>
+
+<page-header base-url=".."></page-header>
+<race-display></race-display>
+<language-selector></language-selector>
+
+<script src="../js/components/page-header.js" type="text/javascript"></script>
+<script src="../js/components/language-selector.js" type="text/javascript"></script>
+<script src="../js/components/race-display.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let raceDisplay = document.querySelector('race-display');
+    raceDisplay.setData({
+  "name": {
+    "fr": "Manuel du Joueur",
+    "en": "Player Handbook"
+  }
+}
+, {
 	"name": {
 		"en": "Halflings",
 		"fr": "Halfelins"
@@ -60,3 +87,7 @@
 		]
 	}
 }
+);
+</script>
+</body>
+</html>
