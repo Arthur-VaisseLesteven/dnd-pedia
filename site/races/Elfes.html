@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Dodouce - Elfes</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../js/components/page-header.css">
+    <link rel="stylesheet" href="../js/components/language-selector.css">
+</head>
+<body>
+
+<page-header base-url=".."></page-header>
+<race-display></race-display>
+<language-selector></language-selector>
+
+<script src="../js/components/page-header.js" type="text/javascript"></script>
+<script src="../js/components/language-selector.js" type="text/javascript"></script>
+<script src="../js/components/race-display.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let raceDisplay = document.querySelector('race-display');
+    raceDisplay.setData({
+  "name": {
+    "fr": "Manuel du Joueur",
+    "en": "Player Handbook"
+  }
+}
+, {
+	"name": {
+		"en": "Elves",
+		"fr": "Elfes"
+	},
+	"lore": {
+		"en": [
+			{ "content": "Elves mingle freely in human lands, always welcome yet never at home there. They are well known for their poetry, dance, song, lore, and magical arts. Elves favor things of natural and simple beauty. When danger threatens their woodland homes, however, elves reveal a more martial side, demonstrating skill with sword, bow, and battle strategy." },
+			{ "title": "Personality", "content": "Elves are more often amused than excited, and more likely to be curious than greedy. With such a long life span, they tend to keep a broad perspective on events, remaining aloof and unfazed by petty happenstance. When pursuing a goal, however, whether an adventurous mission or learning a new skill or art, they can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them. They reply to petty insults with disdain and to serious insults with vengeance." },
+			{ "title": "Physical Description", "content": "Elves are short and slim, standing about 4-1/2 to 5-1/2 feet tall and typically weighing 95 to 135 pounds, with elf men the same height as and only marginally heavier than elf women. They are graceful but frail. They tend to be paleskinned and dark-haired, with deep green eyes. Elves have no facial or body hair. They prefer simple, comfortable clothes, especially in pastel blues and greens, and they enjoy simple yet elegant jewelry. Elves possess unearthly grace and fine features. Many humans and members of other races find them hauntingly beautiful. An elf reaches adulthood at about 110 years of age and can live to be more than 700 years old. Elves do not sleep, as members of the other common races do. Instead, an elf meditates in a deep trance for 4 hours a day. An elf resting in this fashion gains the same benefit that a human does from 8 hours of sleep. While meditating, an elf dreams, though these dreams are actually mental exercises that have become reflexive through years of practice. The Common word for an elf ’s meditation is “trance,” as in “four hours of trance.”" },
+			{ "title": "Relations", "content": "Elves consider humans rather unrefined, halflings a bit staid, gnomes somewhat trivial, and dwarves not at all fun. They look on half-elves with some degree of pity, and they regard half-orcs with unrelenting suspicion. While haughty, elves are not particular the way halflings and dwarves can be, and they are generally pleasant and gracious even to those who fall short of elven standards (a category that encompasses just about everybody who’s not an elf )." },
+			{ "title": "Alignment", "content": "Since elves love freedom, variety, and self-expression, they lean strongly toward the gentler aspects of chaos. Generally, they value and protect others’ freedom as well as their own, and they are more often good than not." },
+			{ "title": "Elven Lands", "content": "Most elves live in woodland clans numbering less than two hundred souls. Their well-hidden villages blend into the trees, doing little harm to the forest. They hunt game, gather food, and grow vegetables, and their skill and magic allow them to support themselves amply without the need for clearing and plowing land. Their contact with outsiders is usually limited, though some few elves make a good living trading finely worked elven clothes and crafts for the metals that elves have no interest in mining. Elves encountered in human lands are commonly wandering minstrels, favored artists, or sages. Human nobles compete for the services of elf instructors, who teach swordplay to their children." },
+			{ "title": "Religion", "content": "Above all others, elves worship Corellon Larethian, the Protector and Preserver of life. Elven myth holds that it was from his blood, shed in battles with Gruumsh, the god of the orcs, that the elves first arose. Corellon is a patron of magical study, arts, dance, and poetry, as well as a powerful warrior god." },
+			{ "title": "Language", "content": " Elves speak a fluid language of subtle intonations and intricate grammar. While Elven literature is rich and varied, it is the language’s songs and poems that are most famous. Many bards learn Elven so they can add Elven ballads to their repertoires. Others simply memorize Elven songs by sound. The Elven script, as flowing as the spoken word, also serves as the script for Sylvan, the language of dryads and pixies, for Aquan, the language of water-based creatures, and for Undercommon, the language of drow and other subterranean creatures." },
+			{ "title": "Names", "content": "When an elf declares herself an adult, usually some time after her hundredth birthday, she also selects a name. Those who knew her as a youngster may or may not continue to call her by her “child name,” and she may or may not care. An elf ’s adult name is a unique creation, though it may reflect the names of those she admires or the names of others in her family. In addition, she bears her family name. Family names are combinations of regular Elven words; some elves traveling among humans translate their family names into Common, while others use the Elven version." },
+			{ "title": "Male Names", "content": "Aramil, Aust, Enialis, Heian, Himo, Ivellios, Laucian, Quarion, Soveliss, Thamior, Tharivol." },
+			{ "title": "Female Names", "content": "Anastrianna, Antinua, Drusilia, Felosial, Ielenia, Lia, Mialee, Qillathe, Silaqui, Vadania, Valanthe, Xanaphia." },
+			{ "title": "Family Names (Common Translations)", "content": "Amastacia (Starflower), Amakiir (Gemflower), Galanodel (Moonwhisper), Holimion (Diamonddew), Liadon (Silverfrond), Meliamne (Oakenheel), Naïlo (Nightbreeze), Siannodel (Moonbrook), Ilphukiir (Gemblossom), Xiloscient (Goldpetal)." },
+			{ "title": "Adventurers", "content": "Elves take up adventuring out of wanderlust. Life among humans moves at a pace that elves dislike: regimented from day to day but changing from decade to decade. Elves among humans, therefore, find careers that allow them to wander freely and set their own pace. Elves also enjoy demonstrating their prowess with the sword and bow or gaining greater magical powers, and adventuring allows them to do so. Good elves may also be rebels or crusaders." }
+		],
+		"fr": [
+			{ "content": "Les elfes circulent librement dans les terres humaines, toujours bienvenus mais jamais vraiment chez eux. Ils sont réputés pour leur poésie, leur danse, leur chant, leur savoir et leurs arts magiques. Ils privilégient les choses d’une beauté naturelle et simple. Cependant, lorsque leurs foyers forestiers sont menacés, ils révèlent un côté plus martial, faisant preuve d’une grande maîtrise de l’épée, de l’arc et de la stratégie." },
+			{ "title": "Personnalité", "content": "Les elfes sont plus souvent amusés qu’excités, et plus enclins à la curiosité qu’à l’avidité. Grâce à leur longue espérance de vie, ils gardent une perspective large sur les événements, restant détachés et imperturbables face aux mesquineries. Lorsqu’ils poursuivent un objectif, qu’il s’agisse d’une mission aventureuse ou de l’apprentissage d’une nouvelle compétence ou d’un nouvel art, ils peuvent être concentrés et implacables. Ils sont lents à se faire des amis ou des ennemis, et encore plus lents à les oublier. Ils répondent aux insultes mineures avec mépris et aux graves offenses par la vengeance." },
+			{ "title": "Description physique", "content": "Les elfes sont minces et élancés, mesurant généralement entre 1,35 et 1,65 mètre pour un poids de 43 à 61 kilogrammes, les hommes elfes étant de la même taille que les femmes et seulement légèrement plus lourds. Ils sont gracieux mais fragiles. Leur peau est pâle et leurs cheveux sont généralement foncés, avec des yeux d’un vert profond. Les elfes n’ont ni poils faciaux ni corporels. Ils préfèrent des vêtements simples et confortables, souvent dans des tons pastel bleus et verts, et aiment les bijoux élégants mais discrets. Les elfes possèdent une grâce surnaturelle et des traits fins. Beaucoup d’humains et de membres d’autres races les trouvent d’une beauté envoûtante. Un elfe atteint l’âge adulte vers 110 ans et peut vivre plus de 700 ans. Les elfes ne dorment pas comme les autres races communes : à la place, ils méditent en transe profonde pendant 4 heures par jour. Un elfe se reposant de cette manière tire les mêmes bénéfices qu’un humain après 8 heures de sommeil. Pendant cette méditation, l’elfe rêve, bien que ces rêves soient en réalité des exercices mentaux devenus réflexes après des années de pratique. Le terme commun pour désigner cette méditation est 'transe', comme dans 'quatre heures de transe'." },
+			{ "title": "Relations", "content": "Les elfes considèrent les humains comme peu raffinés, les semi-hommes comme un peu guindés, les gnomes comme quelque peu triviaux et les nains comme peu amusants. Ils regardent les demi-elfes avec une certaine pitié et les demi-orcs avec une méfiance implacable. Bien qu’ils soient hautains, les elfes ne sont pas aussi pointilleux que les semi-hommes ou les nains, et ils restent généralement agréables et gracieux, même envers ceux qui ne répondent pas à leurs standards (une catégorie qui inclut presque tout le monde sauf les elfes)." },
+			{ "title": "Alignement", "content": "Puisque les elfes aiment la liberté, la variété et l’expression de soi, ils penchent fortement vers les aspects les plus doux du chaos. En général, ils valorisent et protègent la liberté des autres autant que la leur, et ils sont plus souvent bons que mauvais." },
+			{ "title": "Terres elfiques", "content": "La plupart des elfes vivent dans des clans forestiers comptant moins de deux cents âmes. Leurs villages bien cachés se fondent dans les arbres, causant peu de dommages à la forêt. Ils chassent, cueillent et cultivent des légumes, et leur habileté ainsi que leur magie leur permettent de subvenir à leurs besoins sans défricher ni labourer. Leurs contacts avec les étrangers sont généralement limités, bien que quelques elfes gagnent bien leur vie en échangeant des vêtements et des objets artisanaux elfiques finement ouvragés contre des métaux, que les elfes n’ont aucun intérêt à extraire. Les elfes rencontrés dans les terres humaines sont souvent des ménestrels itinérants, des artistes renommés ou des sages. Les nobles humains se disputent les services des instructeurs elfes, qui enseignent l’escrime à leurs enfants." },
+			{ "title": "Religion", "content": "Par-dessus tout, les elfes vénèrent Corellon Larethian, le Protecteur et le Préservateur de la vie. Selon la mythologie elfique, c’est de son sang, versé lors de batailles contre Gruumsh, le dieu des orcs, que les elfes sont nés. Corellon est le patron des études magiques, des arts, de la danse et de la poésie, ainsi qu’un puissant dieu guerrier." },
+			{ "title": "Langue", "content": "Les elfes parlent une langue fluide, aux intonations subtiles et à la grammaire complexe. Bien que la littérature elfique soit riche et variée, ce sont les chansons et les poèmes de cette langue qui sont les plus célèbres. De nombreux bardes apprennent l’elfique pour ajouter des ballades elfiques à leur répertoire. D’autres se contentent de mémoriser les chansons elfiques par leur son. L’écriture elfique, aussi fluide que la parole, sert également pour le sylvestre, la langue des dryades et des pixies, pour l’aquan, la langue des créatures aquatiques, et pour le commun des profondeurs, la langue des drows et autres créatures souterraines." },
+			{ "title": "Noms", "content": "Quand un elfe se déclare adulte, généralement après son centième anniversaire, il choisit aussi un nom. Ceux qui l’ont connu enfant peuvent ou non continuer à l’appeler par son 'nom d’enfant', et cela peut ou non lui importer. Le nom d’adulte d’un elfe est une création unique, bien qu’il puisse refléter les noms de ceux qu’il admire ou ceux des autres membres de sa famille. En plus de cela, il porte son nom de famille. Les noms de famille sont des combinaisons de mots elfiques courants ; certains elfes voyageant parmi les humains traduisent leurs noms de famille en commun, tandis que d’autres utilisent la version elfique." },
+			{ "title": "Noms masculins", "content": "Aramil, Aust, Enialis, Heian, Himo, Ivellios, Laucian, Quarion, Soveliss, Thamior, Tharivol." },
+			{ "title": "Noms féminins", "content": "Anastrianna, Antinua, Drusilia, Felosial, Ielenia, Lia, Mialee, Qillathe, Silaqui, Vadania, Valanthe, Xanaphia." },
+			{ "title": "Noms de famille (traductions courantes)", "content": "Amastacia (Fleur d’étoile), Amakiir (Fleur de gemme), Galanodel (Murmuure lunaire), Holimion (Rosée diamant), Liadon (Feuille d’argent), Meliamne (Talonnée de chêne), Naïlo (Brise nocturne), Siannodel (Ruisseau lunaire), Ilphukiir (Fleur de gemme), Xiloscient (Pétale d’or)." },
+			{ "title": "Aventuriers", "content": "Les elfes se lancent dans l’aventure par désir d’évasion. La vie parmi les humains évolue à un rythme qu’ils n’aiment pas : rigide au quotidien mais changeant d’une décennie à l’autre. Les elfes parmi les humains trouvent donc des carrières qui leur permettent de vagabonder librement et de fixer leur propre rythme. Ils aiment aussi démontrer leur maîtrise de l’épée et de l’arc ou acquérir de plus grands pouvoirs magiques, et l’aventure leur en donne l’opportunité. Les elfes bons peuvent également être des rebelles ou des croisés." }
+		]
+	},
+	"racial-features": {
+		"en": [
+			{ "content": "+2 Dexterity, –2 Constitution: Elves are graceful but frail. An elf’s grace makes her naturally better at stealth and archery."},
+			{ "content": "Medium: As Medium creatures, elves have no special bonuses or penalties due to their size."},
+			{ "content": "Elf base land speed is 30 feet"},
+			{ "content": "Immunity to magic sleep effects, and a +2 racial saving throw bonus against enchantment spells or effects"},
+			{ "content": "Low-Light Vision: An elf can see twice as far as a human in starlight, moonlight, torchlight, and similar conditions of poor illumination. She retains the ability to distinguish color and detail under these conditions."},
+			{ "content": "Weapon Proficiency: Elves receive the Martial Weapon Proficiency feats for the longsword, rapier, longbow (including composite longbow), and shortbow (including composite shortbow) as bonus feats. Elves esteem the arts of swordplay and archery, so all elves are familiar with these weapons."},
+			{ "content": "+2 racial bonus on Listen, Search, and Spot checks. An elf who merely passes within 5 feet of a secret or concealed door is entitled to a Search check to notice it as if she were actively looking for it. An elf’s senses are so keen that she practically has a sixth sense about hidden portals"},
+			{ "content": "Automatic Languages: Common and Elven. Bonus Languages: Draconic, Gnoll, Gnome, Goblin, Orc, and Sylvan. Elves commonly know the languages of their enemies and of their friends, as well as Draconic, the language commonly found in ancient tomes of secret knowledge"},
+			{ "content": "Favored Class: Wizard. A multiclass elf’s wizard class does not count when determining whether she takes an experience point penalty for multiclassing. Wizardry comes naturally to elves—indeed, they sometimes claim to have invented it, and fighter/wizards are especially common among them."}
+		],
+		"fr": [
+			{ "content": "+2 Dextérité, –2 Constitution : Les elfes sont gracieux mais fragiles. Leur grâce les rend naturellement meilleurs en furtivité et en tir à l’arc." },
+			{ "content": "Taille moyenne : En tant que créatures de taille Moyenne, les elfes n’ont ni bonus ni pénalités liés à leur taille." },
+			{ "content": "Vitesse de déplacement de base : 9 mètres (30 pieds)" },
+			{ "content": "Immunité aux effets de sommeil magique, et un bonus racial de +2 aux jets de sauvegarde contre les sorts et effets d’enchantement." },
+			{ "content": "Vision dans la pénombre : Un elfe peut voir deux fois plus loin qu’un humain dans des conditions de faible luminosité, comme la lumière des étoiles, de la lune, des torches, etc. Il conserve la capacité de distinguer les couleurs et les détails dans ces conditions." },
+			{ "content": "Maîtrise des armes : Les elfes reçoivent les dons de Maîtrise des armes de guerre pour l’épée longue, le rapier, l’arc long (y compris l’arc long composite) et l’arc court (y compris l’arc court composite) en tant que dons bonus. Les elfes estiment les arts de l’escrime et du tir à l’arc, donc tous les elfes sont familiers avec ces armes." },
+			{ "content": "Bonus racial de +2 aux tests d’Écoute, de Fouille et de Repérage. Un elfe passant à 1,50 mètre d’une porte secrète ou dissimulée peut faire un test de Fouille pour la remarquer, comme s’il la cherchait activement. Les sens d’un elfe sont si aiguisés qu’il possède presque un sixième sens pour les portails cachés." },
+			{ "content": "Langues automatiques : Commun et elfique. Langues bonus : Draconique, Gnoll, Gnome, Gobelin, Orc et Sylvestre. Les elfes connaissent souvent les langues de leurs ennemis et de leurs amis, ainsi que le draconique, la langue couramment trouvée dans les anciens grimoires de savoir secret." },
+			{ "content": "Classe de prédilection : Magicien. Les niveaux de magicien d’un elfe multiclasse ne comptent pas pour déterminer s’il subit une pénalité d’expérience pour le multiclasse. La magie vient naturellement aux elfes — en fait, ils prétendent parfois l’avoir inventée, et les guerriers-mages sont particulièrement courants parmi eux." }
+		]
+	}
+});
+</script>
+</body>
+</html>
