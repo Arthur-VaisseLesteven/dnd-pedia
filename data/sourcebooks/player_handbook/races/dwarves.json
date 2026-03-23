@@ -62,7 +62,7 @@
             { "content": "Bonus racial de +2 aux tests d’Évaluation liés aux objets en pierre ou en métal : Les nains sont familiers avec les objets de valeur de toutes sortes, en particulier ceux fabriqués en pierre ou en métal." },
             { "content": "Bonus racial de +2 aux tests d’Artisanat liés à la pierre ou au métal : Les nains sont particulièrement compétents dans le travail de la pierre et du métal." },
             { "content": "Langues automatiques : le Commun et le Nain. Langues bonus : Géant, Gnome, Gobelin, Orc, Terran et Commun des profondeurs. Les nains connaissent les langues de leurs ennemis et de leurs alliés souterrains." },
-            { "content": "Classe de prédilection : Guerrier. La classe de guerrier d’un nain multiclasse ne compte pas pour déterminer s’il subit une pénalité d’expérience pour le multiclassage. La culture naine exalte les vertus du combat, et cette vocation vient naturellement aux nains." }
+            { "content": "Classe de prédilection : Guerrier. La classe de guerrier d’un nain multiclassé ne compte pas pour déterminer s’il subit une pénalité d’expérience pour le multiclassage. La culture naine exalte les vertus du combat, et cette vocation vient naturellement aux nains." }
         ]
 	}
 }
