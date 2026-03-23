@@ -1,0 +1,40 @@
+{
+	"name": {
+		"en": "Halflings",
+        "fr": ""
+	},
+	"lore": {
+		"en": [
+			{ "content": "Halflings are clever, capable opportunists. Halfling\nindividuals and clans find room for themselves\nwherever they can. Often they are strangers and\nwanderers, and others react to them with suspicion or curiosity. Depending on the clan, halflings might be reliable, hard-working (if clannish) citizens, or they might be thieves just\nwaiting for the opportunity to make a big score\nand disappear in the dead of night. Regardless,\nhalflings are cunning, resourceful survivors." },
+			{ "title": "Personality", "content": "Halflings prefer trouble to\nboredom. They are notoriously curious.\nRelying on their ability to survive\nor escape danger, they demonstrate a daring that many\nlarger people can’t match.\nHalfling clans are nomadic, wandering\nwherever circumstance and curiosity take\nthem. Halflings enjoy wealth and the pleasures it can\nbring, and they tend to spend gold as quickly as they acquire it.\nHalflings are also famous collectors. While more orthodox halflings may collect weapons, books, or jewelry, some collect such\nobjects as the hides of wild beasts—or even the beasts themselves.\nWealthy halflings sometimes commission adventurers to retrieve\nexotic items to complete their collections." },
+			{ "title": "Physical Description", "content": "Halflings stand about 3 feet tall and usually weigh between 30 and 35 pounds. Their skin is ruddy, and their\nhair is black and straight. They have brown or black eyes. Halfling\nmen often have long sideburns, but beards are rare among them\nand mustaches are almost unseen. They like to wear simple, comfortable, and practical clothes. A halfling reaches adulthood at the\nage of 20 and generally lives into the middle of her second century." },
+			{ "title": "Relations", "content": "Halflings try to get along with everyone else. They\nare adept at fitting into a community of humans, dwarves, elves, or\ngnomes and making themselves valuable and welcome. Since\n20\nhuman society changes faster than the societies of the longerlived races, it is human society that most frequently offers halflings opportunities to exploit, so halflings are most often found in\nor around human lands." },
+			{ "title": "Alignment", "content": " Halflings tend to be neutral. While they are comfortable with change (a chaotic trait), they also tend to rely on intangible constants, such as clan ties and personal honor (a lawful trait)." },
+			{ "title": "Halfling Lands", "content": " Halflings have no lands of their own. Instead,\nthey live in the lands of other races, where they can benefit from\nwhatever resources those areas have to offer. Halflings often form\ntight-knit communities in human or dwarven cities. While they\nwork readily with others, they often make friends only among\ntheir own kind. Halflings also settle into secluded places where\nthey set up self-reliant villages. Halfling communities, however, are\nknown for picking up and moving en masse to some place that\noffers a new opportunity, such as a new mine that has just opened,\nor to a land where a devastating war has made skilled workers hard\nto find. If these opportunities are temporary, the community may\npick up and move again once the opportunity is gone, or once a\nbetter one presents itself. Some halfling communities, on the other\nhand, take to traveling as a way of life, driving wagons or guiding\nboats from place to place and maintaining no permanent home." },
+			{ "title": "Religion", "content": "The chief halfling deity is Yondalla, the\nBlessed One, protector of the halflings. Yondalla promises blessings and protection to\nthose who heed her guidance, defend\ntheir clans, and cherish their families.\nHalflings also recognize countless\nlesser gods, who rule over individual\nvillages, forests, rivers, lakes, and so on.\nThe halflings pay homage to these\ndeities to ensure safe journeys as they\ntravel from place to place." },
+			{ "title": "Language", "content": "Halflings speak their\nown language, which uses the\nCommon script. They write very\nlittle in their own language, so, unlike\ndwarves, elves, and gnomes, they don’t\nhave a rich body of written work. The\nhalfling oral tradition, however, is very\nstrong. While the Halfling language isn’t secret,\nhalflings are loath to share it with others. Almost all\nhalflings speak Common, since they use it to deal\nwith the people in whose lands they are living or\nthrough which they are traveling." },
+			{ "title": "Names", "content": "A halfling has a given name, a family name, and\npossibly a nickname. It would seem that\nfamily names are nothing more than\nnicknames that stuck so well they\nhave been passed down through the\ngenerations." },
+			{ "title": "Male Names", "content": "Alton, Beau, Cade,\nEldon, Garret, Lyle, Milo, Osborn,\nRoscoe, Wellby" },
+			{ "title": "Female Names", "content": "Amaryllis, Charmaine, Cora, Euphemia, Jillian, Lavinia, Lidda, Merla, Portia,\nSeraphina, Verna." },
+			{ "title": "Family Names", "content": "Brushgather, Goodbarrel, Greenbottle, Highhill, Hilltopple, Leagallow, Tealeaf, Thorngage, Tosscobble, Underbough." },
+			{ "title": "Adventurers", "content": "Halflings often set out on their own to make their\nway in the world. Halfling adventurers are typically looking for a\nway to use their skills to gain wealth or status. The distinction\nbetween a halfling adventurer and a halfling out on her own looking for “a big score” can get blurry. For a halfling, adventuring is less\nof a career than an opportunity. While halfling opportunism can\nsometimes look like larceny or fraud to others, a halfling adventurer\nwho learns to trust her fellows is worthy of trust in return." }
+		],
+		"fr": [
+		]
+	},
+	"racial-features": {
+		"en" : [
+			{ "content": "+2 Dexterity, –2 Strength: Halflings are quick, agile, and good\nwith ranged weapons, but they are small and therefore not as\nstrong as other humanoids."},
+			{ "content": "Small: As a Small creature, a halfling gains a +1 size bonus to\nArmor Class, a +1 size bonus on attack rolls, and a +4 size bonus\non Hide checks, but she uses smaller weapons than humans\nuse, and her lifting and carrying limits are three-quarters of\nthose of a Medium character."},
+			{ "content": "Halfling base land speed is 20 feet."},
+			{ "content": "+2 racial bonus on Climb, Jump, and Move Silently\nchecks: Halflings are agile, surefooted, and\nathletic."},
+			{ "content": "+1 racial bonus on all saving throws:\nHalflings are surprisingly capable of avoiding\nmishaps."},
+			{ "content": "+1 racial bonus on attack rolls with thrown\nweapons and slings: Throwing and slinging\nstones is a universal sport among halflings,\nand they develop especially good aim."},
+			{ "content": "+2 racial bonus on Listen checks:\nHalflings have keen ears."},
+			{ "content": "Automatic Languages: Common\nand Halfling. Bonus Languages:\nDwarven, Elven, Gnome, Goblin,\nand Orc. Smart halflings learn\nthe languages of their friends\nand enemies."},
+			{ "content": "Favored Class: Rogue. A multiclass halfling’s rogue class does not count when\ndetermining whether she takes an\nexperience point penalty for multiclassing. Halflings\nhave long had to rely on stealth,\nwit, and skill, and the vocation of\nrogue comes naturally to them."}
+		],
+		"fr": [
+        ]
+	}
+}
