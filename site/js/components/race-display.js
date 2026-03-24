@@ -28,7 +28,7 @@ class RaceDisplay extends HTMLElement {
          this.innerHTML = `
             <style>
                 race-display {
-                    max-width: 800px;
+                    max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
                     padding: 0 20px;
