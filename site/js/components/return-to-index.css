@@ -1,0 +1,31 @@
+return-to-index a {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #2a2a3e;
+    color: #c4956a;
+    font-family: 'LibreBaskerville', 'Georgia', serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(139, 94, 60, 0.4);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+return-to-index a:hover {
+    background-color: #3a3a50;
+    color: #e0c097;
+}
+
+return-to-index a .arrow {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
