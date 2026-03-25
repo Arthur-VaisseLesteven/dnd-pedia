@@ -72,10 +72,7 @@ class RaceDisplay extends HTMLElement {
     #lore() {
         return this.data['lore'][`${this.lang}`]
             .map(elem => `
-                <section>
-                    ${elem.title ? '<h3>' + elem.title + '</h3>' : ''}
-                    <p>${elem.content}</p>
-                </section>
+                <p>${elem.title ? '<em>' + elem.title + '</em>' : ''} ${elem.content}</p>
             `).join('')
     }
 

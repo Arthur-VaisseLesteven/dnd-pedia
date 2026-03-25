@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #e0c097;
 }
 
+em {
+    color: #e0c097;
+}
+
 a {
     color: #c4956a;
     text-decoration: none;
