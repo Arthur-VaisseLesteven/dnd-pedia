@@ -5,9 +5,13 @@ class LanguageSelector extends HTMLElement {
         { code: 'en', label: 'EN' }
     ];
 
+    static getLanguage() {
+        return localStorage.getItem('selectedLanguage') || 'fr';
+    }
+
     constructor() {
         super();
-        this._selected = 'fr';
+        this._selected = LanguageSelector.getLanguage();
     }
 
     connectedCallback() {
@@ -21,9 +25,9 @@ class LanguageSelector extends HTMLElement {
     set selected(langCode) {
         if (this._selected !== langCode) {
             this._selected = langCode;
+            localStorage.setItem('selectedLanguage', langCode);
             this.render();
             this.dispatchEvent(new CustomEvent('selectedLanguage', {
-                detail: { language: langCode },
                 bubbles: true,
                 composed: true
             }));

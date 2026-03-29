@@ -27,11 +27,11 @@ class ClassTable extends HTMLElement {
 
 	constructor(table_data) {
 			super();
-			this.lang = 'fr';
+			this.lang = LanguageSelector.getLanguage();
 			this.table_data = table_data;
 
-			document.addEventListener('selectedLanguage', (e) => {
-                this.lang = e.detail.language;
+			document.addEventListener('selectedLanguage', () => {
+                this.lang = LanguageSelector.getLanguage();
                 this.render();
             });
 

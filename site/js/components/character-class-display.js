@@ -2,10 +2,10 @@ class CharacterClassDisplay extends HTMLElement {
 
     constructor() {
         super();
-        this.lang = 'fr';
+        this.lang = LanguageSelector.getLanguage();
 
-        document.addEventListener('selectedLanguage', (e) => {
-            this.lang = e.detail.language;
+        document.addEventListener('selectedLanguage', () => {
+            this.lang = LanguageSelector.getLanguage();
             if (this.data) {
                 this.render();
             }
