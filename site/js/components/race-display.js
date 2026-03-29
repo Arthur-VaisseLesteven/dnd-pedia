@@ -61,7 +61,9 @@ class RaceDisplay extends HTMLElement {
                 ${this.#lore()}
             </section>
 
-            ${headers.source} : ${this.#source()}
+            <section>
+                ${headers.source} : ${this.#source()}
+            </section>
          `;
     }
 
