@@ -52,12 +52,11 @@ public class SiteFiles {
 
     private CharSequence serializedContent(Index index) {
         StringBuilder result = new StringBuilder();
-        //theContentTable.addContent({href: './races/demi-elfes.html',    Race: 'Demi-Elfes',    Source: 'Le Manuel du Joueur'});
         for (IndexedElement row : index.data()) {
             StringBuilder resutRow = new StringBuilder();
             resutRow.append("\ttheContentTable.addContent({href: './" + row.pageName()+".html'");
             for (LocalizedString column : index.columns()) {
-                resutRow.append(", %s: '%s'".formatted(column.fr(), row.columns().get(column.fr()).fr().replace("'", "\\'")));
+                resutRow.append(", '%s': '%s'".formatted(column.fr(), row.columns().get(column.fr()).fr().replace("'", "\\'")));
             }
             resutRow.append("});\n");
             result.append(resutRow);

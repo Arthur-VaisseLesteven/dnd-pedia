@@ -78,7 +78,23 @@ public class SiteGenerator {
     }
 
     private void buildBaseClassIndex(Collection<BaseClass> baseClasses) {
-        LOGGER.warn("cannot index baseclass, page not yet implemented");
+        siteFiles.createIndex(
+                "Classes de base",
+                Path.of("./classes"),
+                new Index(
+                        List.of(
+                                new LocalizedString("Base Class", "Classe de base"),
+                                new LocalizedString("Source", "Source")
+                        ),
+                        baseClasses.stream().map(baseClass -> new IndexedElement(
+                                baseClass.name().fr(),
+                                Map.of(
+                                        "Classe de base", baseClass.name(),
+                                        "Source", baseClass.sourcebook().title()
+                                )
+                        )).toList()
+                )
+        );
     }
 
     private void buildSourcebookPage(Sourcebook sourcebook) {

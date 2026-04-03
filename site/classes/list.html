@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Pedia - Classes de base</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../js/components/page-header.css">
+</head>
+<body>
+
+<page-header base-url=".."></page-header>
+<content-table column-1="Classe de base" column-2="Source" ></content-table>
+
+<script src="../js/components/page-header.js" type="text/javascript"></script>
+<script src="../js/components/contentTable.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let theContentTable = document.querySelector('content-table');
+	theContentTable.addContent({href: './Barbare.html', 'Classe de base': 'Barbare', 'Source': 'Manuel du Joueur'});
+
+</script>
+</body>
+</html>
