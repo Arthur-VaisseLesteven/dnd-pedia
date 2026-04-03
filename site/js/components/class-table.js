@@ -87,6 +87,7 @@ class ClassTable extends HTMLElement {
 				background-color: #1a1a2e
 			}
         </style>
+		<div style="overflow-x: auto; width: 100%;">
 		<table>
 			<thead>
 				<tr class='class-table-element'>
@@ -100,7 +101,8 @@ class ClassTable extends HTMLElement {
 			</thead>
 			<tbody>` + formatedRows + `
 			</tbody>
-		</table>`;
+		</table>
+		</div>`;
 	}
 
 	#formatTableRow(rowContent, index) {
