@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DnD Pedia - ${title}</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../js/components/page-header.css">
+    <link rel="stylesheet" href="../js/components/language-selector.css">
+    <link rel="stylesheet" href="../js/components/return-to-index.css">
+</head>
+<body>
+
+<page-header base-url=".."></page-header>
+<character-class-display></character-class-display>
+<language-selector></language-selector>
+<return-to-index href="./list.html" label="Classes"></return-to-index>
+
+<script src="../js/components/page-header.js" type="text/javascript"></script>
+<script src="../js/components/language-selector.js" type="text/javascript"></script>
+<script src="../js/components/return-to-index.js" type="text/javascript"></script>
+<script src="../js/components/class-table.js" type="text/javascript"></script>
+<script src="../js/components/character-class-display.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let classDisplay = document.querySelector('character-class-display');
+    classDisplay.setData(${source}, ${content});
+</script>
+</body>
+</html>

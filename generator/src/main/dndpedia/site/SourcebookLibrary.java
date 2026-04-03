@@ -2,6 +2,7 @@ package dndpedia.site;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import dndpedia.site.model.BaseClass;
 import dndpedia.site.model.Name;
 import dndpedia.site.model.Race;
 import dndpedia.site.model.Sourcebook;
@@ -40,6 +41,13 @@ public class SourcebookLibrary {
                 sourcebook.addRace(name, raceContent);
                 LOGGER.info("Read race {}", name.name().en());
             }
+
+            for (String baseClassContent : sourcebookDirectory.baseclasses()) {
+                LOGGER.debug("reading {}", baseClassContent);
+                Name name = objectMapper.readValue(baseClassContent, Name.class);
+                sourcebook.addBaseClass(name, baseClassContent);
+                LOGGER.info("read base class {}", name.name().en());
+            }
         } catch (Exception exception) {
             throw new IllegalStateException(exception);
         }
@@ -57,5 +65,13 @@ public class SourcebookLibrary {
 
     public Collection<Sourcebook> sourcebooks() {
         return sourcebooks;
+    }
+
+    public Collection<BaseClass> base_classes() {
+        List<BaseClass> result = new ArrayList<>();
+
+        this.sourcebooks.stream().map(Sourcebook::baseClasses).forEach(result::addAll);
+
+        return result;
     }
 }

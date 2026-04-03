@@ -1,25 +1,25 @@
 package dndpedia.site;
 
-import dndpedia.site.model.Index;
-import dndpedia.site.model.IndexedElement;
-import dndpedia.site.model.LocalizedString;
-import dndpedia.site.model.Race;
+import dndpedia.site.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Map;
 
 public class SiteFiles {
     private static final Logger LOGGER = LogManager.getLogger(SiteFiles.class);
     private final Path indexPageTemplate;
     private final Path racePageTemplate;
+    private final Path baseClassesPageTemplate;
     private final Path siteDirectory;
 
     public SiteFiles(Path siteDirectory, Path templateDirectory) {
         this.indexPageTemplate = templateDirectory.resolve("./indexPage.html.template");
         this.racePageTemplate = templateDirectory.resolve("./racePageTemplate.html.template");
+        this.baseClassesPageTemplate = templateDirectory.resolve("./classPageTemplate.html.template");
         this.siteDirectory = siteDirectory;
     }
 
@@ -67,16 +67,35 @@ public class SiteFiles {
     }
 
     public void create(Race race) {
-        try {
-            String content = Files.readString(racePageTemplate)
-                    .replace("${title}", race.name().fr())
-                    .replace("${source}", race.sourcebook().rawTitle())
-                    .replace("${content}", race.jsonContent());
+        Map<String, String> placeholders = Map.of(
+                "${title}", race.name().fr(),
+                "${source}", race.sourcebook().rawTitle(),
+                "${content}", race.jsonContent()
+        );
+        addToSite(racePageTemplate, placeholders, "./races/" + race.name().fr() + ".html");
+    }
 
-            Files.writeString(siteDirectory.resolve("./races/" + race.name().fr() + ".html"), content);
-            LOGGER.info("Generated page for Race {}", race.name().fr());
+    public void create(BaseClass baseClass) {
+        Map<String, String> placeholders = Map.of(
+                "${title}", baseClass.name().fr(),
+                "${source}", baseClass.sourcebook().rawTitle(),
+                "${content}", baseClass.jsonContent()
+        );
+        addToSite(baseClassesPageTemplate, placeholders, "./classes/" + baseClass.name().fr() + ".html");
+    }
+
+    private void addToSite(Path template, Map<String, String> placeholders, String filename) {
+        try {
+            String content = Files.readString(template);
+
+            for (String placeholder : placeholders.keySet()) {
+                content = content.replace(placeholder, placeholders.get(placeholder));
+            }
+
+            Files.writeString(siteDirectory.resolve(filename), content);
+            LOGGER.info("Generated page {}", filename);
         } catch (IOException e) {
-            throw new IllegalStateException("Failing to generate race page for " + race, e);
+            throw new RuntimeException("encountered an exception while generating " + filename);
         }
     }
 }

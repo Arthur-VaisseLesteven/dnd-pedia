@@ -15,17 +15,16 @@ public record SourcebookDirectory (File directory) {
     public String title() {
         return read(getFile("meta.json").orElseThrow());
     }
+    private List<String> listOfContentsOfSubdirectory(String base_class) {
+        List<String> fileContents = new ArrayList<>();
 
-    public List<String> races() {
-        List<String> races = new ArrayList<>();
-
-        getFile("races").map(File::listFiles).ifPresent(files -> {
-            for (File raceFile : files) {
-                races.add(read(raceFile));
+        getFile(base_class).map(File::listFiles).ifPresent(files -> {
+            for (File baseclassfile : files) {
+                fileContents.add(read(baseclassfile));
             }
         });
 
-        return races;
+        return fileContents;
     }
 
     private Optional<File> getFile(String filename) {
@@ -48,4 +47,11 @@ public record SourcebookDirectory (File directory) {
         }
     }
 
+    public List<String> races() {
+        return listOfContentsOfSubdirectory("races");
+    }
+
+    public List<String> baseclasses() {
+        return listOfContentsOfSubdirectory("base_class");
+    }
 }

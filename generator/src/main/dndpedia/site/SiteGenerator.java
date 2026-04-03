@@ -46,6 +46,11 @@ public class SiteGenerator {
         }
         buildRaceIndex(library.races());
 
+        for (BaseClass baseClass : library.base_classes()) {
+            siteFiles.create(baseClass);
+        }
+        buildBaseClassIndex(library.base_classes());
+
         for (Sourcebook sourcebook : library.sourcebooks()) {
             buildSourcebookPage(sourcebook);
         }
@@ -70,6 +75,10 @@ public class SiteGenerator {
                         )).toList()
                 )
         );
+    }
+
+    private void buildBaseClassIndex(Collection<BaseClass> baseClasses) {
+        LOGGER.warn("cannot index baseclass, page not yet implemented");
     }
 
     private void buildSourcebookPage(Sourcebook sourcebook) {
