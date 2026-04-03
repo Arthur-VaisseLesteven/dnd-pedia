@@ -33,7 +33,7 @@
 /* ── Reset & Base ───────────────────────────────────────────── */
 
 html,body{
-	font-size: large;
+	font-size: clamp(16px, 4.5vw, 18px);
 }
 
 body {
