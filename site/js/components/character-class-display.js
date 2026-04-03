@@ -65,7 +65,9 @@ class CharacterClassDisplay extends HTMLElement {
                     ${this.#skills()}
                 </section>
                 <section id='class-table'>
-
+                </section>
+                <section>
+                    ${this.#featuresDetails()}
                 </section>
             </section>
 
@@ -111,6 +113,13 @@ class CharacterClassDisplay extends HTMLElement {
         } else {
             return `<em>Skills : </em> (${number}+intelligence modifier)x4 skill points at level 1, then (${number}+intelligence modifier) each level. The class skills are : ${list}.`
         }
+    }
+
+    #featuresDetails() {
+        return this.data['features'][`${this.lang}`]
+            .map(elem => `
+				<p>${elem.title ? '<em>' + elem.title + ' : </em>' : ''} ${elem.content}</p>
+            `).join('');
     }
 }
 

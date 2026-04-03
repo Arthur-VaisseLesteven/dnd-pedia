@@ -9,18 +9,18 @@ class ClassTable extends HTMLElement {
 	static HEADERS = {
 		'fr': {
 			level : 'Niveau',
-			bba : 'Bonus de base à l’attaque',
-			fortitude: 'Bonus de base de Vigueur',
-			reflex: 'Bonus de base de Réflexes',
-			will: 'Bonus de base de Volonté',
+			bba : 'BBA',
+			fortitude: 'Vigueur',
+			reflex: 'Réflexes',
+			will: 'Volonté',
 			special: 'Spécial'
 		},
 		'en': {
 			level : 'Level',
-            bba : 'Base attack bonus',
-            fortitude: 'Base Fortitude bonus',
-            reflex: 'Base reflex bonus',
-            will: 'Base will bonus',
+            bba : 'BAB',
+            fortitude: 'Fortitude',
+            reflex: 'Reflex',
+            will: 'Will',
             special: 'Special'
 		}
 	}
@@ -71,12 +71,25 @@ class ClassTable extends HTMLElement {
 		let will = ClassTable.HEADERS[`${this.lang}`].will;
 		let special = ClassTable.HEADERS[`${this.lang}`].special;
 
-		let formatedRows = rows.map(row => this.#formatTableRow(row)).join('');
+		let formatedRows = rows.map((row, index) => this.#formatTableRow(row, index)).join('');
 
 		this.innerHTML = `
+		<style>
+			.class-table-element th{
+				border-style: solid;
+			}
+
+			.odd {
+				background-color: #2a2a3e
+			}
+
+			.even {
+				background-color: #1a1a2e
+			}
+        </style>
 		<table>
 			<thead>
-				<tr>
+				<tr class='class-table-element'>
 					<th>${level}</th>
 					<th>${bba}</th>
 					<th>${fortitude}</th>
@@ -90,15 +103,19 @@ class ClassTable extends HTMLElement {
 		</table>`;
 	}
 
-	#formatTableRow(rowContent) {
+	#formatTableRow(rowContent, index) {
 		return `<tr>
-			${rowContent.map(cellContent => this.#formatTableCell(cellContent)).join('')}
+			${rowContent.map(cellContent => this.#formatTableCell(cellContent, index)).join('')}
 		</tr>
 		`;
 	}
 
-	#formatTableCell(cellContent) {
-		return `<td>${cellContent}</td>`;
+	#formatTableCell(cellContent, index) {
+		return `<td class='${this.#parity(index)}'>${cellContent}</td>`;
+	}
+
+	#parity(index) {
+		return index % 2 === 0 ? 'odd' : 'even';
 	}
 }
 

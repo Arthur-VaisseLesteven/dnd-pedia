@@ -32,6 +32,10 @@
 
 /* ── Reset & Base ───────────────────────────────────────────── */
 
+html,body{
+	font-size: large;
+}
+
 body {
     font-family: 'LibreBaskerville', 'Georgia', serif;
     background-color: #1a1a2e;
