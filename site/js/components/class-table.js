@@ -51,73 +51,87 @@ class ClassTable extends HTMLElement {
 	}
 
 	render() {
-		let rows = []
+		const h = ClassTable.HEADERS[`${this.lang}`];
+		const rows = this.table_data['special'][`${this.lang}`].map((special, index) => ({
+			level:     ClassTable.LEVEL[index],
+			bba:       this.bba[index],
+			fortitude: this.fortitude[index],
+			reflex:    this.reflex[index],
+			will:      this.will[index],
+			special
+		}));
 
-		this.table_data['special'][`${this.lang}`].forEach((item, index) => {
-			rows.push([
-				ClassTable.LEVEL[index],
-				this.bba[index],
-				this.fortitude[index],
-				this.reflex[index],
-				this.will[index],
-				item
-			]);
-		});
-
-		let level = ClassTable.HEADERS[`${this.lang}`].level;
-		let bba = ClassTable.HEADERS[`${this.lang}`].bba;
-		let fortitude = ClassTable.HEADERS[`${this.lang}`].fortitude;
-		let reflex = ClassTable.HEADERS[`${this.lang}`].reflex;
-		let will = ClassTable.HEADERS[`${this.lang}`].will;
-		let special = ClassTable.HEADERS[`${this.lang}`].special;
-
-		let formatedRows = rows.map((row, index) => this.#formatTableRow(row, index)).join('');
+		const formattedRows = rows.map((row, index) => this.#formatRow(row, index)).join('');
 
 		this.innerHTML = `
 		<style>
-			.class-table-element th{
-				border-style: solid;
+			.ct-wrapper {
+				overflow-x: auto;
+				width: 100%;
+				border-radius: 8px;
+				border: 1px solid rgba(139, 94, 60, 0.3);
 			}
 
-			.odd {
-				background-color: #2a2a3e
+			.ct {
+				width: 100%;
+				border-collapse: collapse;
+				font-family: 'LibreBaskerville', 'Georgia', serif;
 			}
 
-			.even {
-				background-color: #1a1a2e
+			.ct thead tr {
+				background-color: #16213e;
+				color: #c4956a;
+				font-weight: bold;
+				border-bottom: 2px solid rgba(196, 149, 106, 0.5);
 			}
-        </style>
-		<div style="overflow-x: auto; width: 100%;">
-		<table>
-			<thead>
-				<tr class='class-table-element'>
-					<th>${level}</th>
-					<th>${bba}</th>
-					<th>${fortitude}</th>
-					<th>${reflex}</th>
-					<th>${will}</th>
-					<th>${special}</th>
-				</tr>
-			</thead>
-			<tbody>` + formatedRows + `
-			</tbody>
-		</table>
+
+			.ct th,
+			.ct td {
+				padding: 8px 12px;
+				text-align: left;
+				white-space: nowrap;
+				width: 1%;
+			}
+
+			.ct th.ct-cell-special,
+			.ct td.ct-cell-special {
+				width: 100%;
+				white-space: normal;
+			}
+
+			.ct tbody tr.odd  { background-color: #2a2a3e; }
+			.ct tbody tr.even { background-color: #1a1a2e; }
+			.ct tbody tr:hover { background-color: #3a3a50; }
+		</style>
+		<div class="ct-wrapper">
+			<table class="ct">
+				<thead>
+					<tr>
+						<th>${h.level}</th>
+						<th>${h.bba}</th>
+						<th>${h.fortitude}</th>
+						<th>${h.reflex}</th>
+						<th>${h.will}</th>
+						<th class="ct-cell-special">${h.special}</th>
+					</tr>
+				</thead>
+				<tbody>
+					${formattedRows}
+				</tbody>
+			</table>
 		</div>`;
 	}
 
-	#formatTableRow(rowContent, index) {
-		return `<tr>
-			${rowContent.map(cellContent => this.#formatTableCell(cellContent, index)).join('')}
-		</tr>
-		`;
-	}
-
-	#formatTableCell(cellContent, index) {
-		return `<td class='${this.#parity(index)}'>${cellContent}</td>`;
-	}
-
-	#parity(index) {
-		return index % 2 === 0 ? 'odd' : 'even';
+	#formatRow(row, index) {
+		const parity = index % 2 === 0 ? 'odd' : 'even';
+		return `<tr class="${parity}">
+			<td>${row.level}</td>
+			<td>${row.bba}</td>
+			<td>${row.fortitude}</td>
+			<td>${row.reflex}</td>
+			<td>${row.will}</td>
+			<td class="ct-cell-special">${row.special}</td>
+		</tr>`;
 	}
 }
 
